@@ -1,0 +1,12 @@
+{
+  "name": "arcliva-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Arcliva Wellness Systems website",
+  "scripts": {
+    "dev": "npx netlify dev"
+  },
+  "dependencies": {
+    "stripe": "^17.0.0"
+  }
+}

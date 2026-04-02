@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Order Confirmation | ARCLIVA</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary-container": "#baffed",
+              "on-error": "#ffffff",
+              "on-surface-variant": "#3f4946",
+              "on-surface": "#191c1d",
+              "background": "#f8f9fa",
+              "on-tertiary": "#ffffff",
+              "on-secondary": "#ffffff",
+              "surface-dim": "#d9dadb",
+              "on-background": "#191c1d",
+              "tertiary": "#006152",
+              "surface-container": "#edeeef",
+              "on-primary-fixed-variant": "#005046",
+              "inverse-on-surface": "#f0f1f2",
+              "on-error-container": "#93000a",
+              "tertiary-fixed": "#9df3dd",
+              "on-secondary-container": "#306e64",
+              "inverse-surface": "#2e3132",
+              "outline-variant": "#bec9c5",
+              "tertiary-container": "#1c7b6a",
+              "primary": "#056155",
+              "error-container": "#ffdad6",
+              "tertiary-fixed-dim": "#81d6c2",
+              "surface-container-lowest": "#ffffff",
+              "primary-fixed-dim": "#8ad4c5",
+              "surface-bright": "#f8f9fa",
+              "surface-variant": "#e1e3e4",
+              "error": "#ba1a1a",
+              "outline": "#6f7976",
+              "inverse-primary": "#8ad4c5",
+              "surface": "#f8f9fa",
+              "secondary-fixed-dim": "#94d2c6",
+              "on-tertiary-fixed-variant": "#005144",
+              "surface-container-low": "#f3f4f5",
+              "on-secondary-fixed": "#00201b",
+              "on-tertiary-fixed": "#00201a",
+              "on-primary-fixed": "#00201b",
+              "surface-container-highest": "#e1e3e4",
+              "on-primary": "#ffffff",
+              "secondary-container": "#afefe1",
+              "secondary-fixed": "#afefe1",
+              "primary-container": "#2d7a6d",
+              "secondary": "#29685e",
+              "on-secondary-fixed-variant": "#065046",
+              "surface-tint": "#176a5d",
+              "on-primary-container": "#bdfff0",
+              "primary-fixed": "#a6f1e1",
+              "surface-container-high": "#e7e8e9",
+              "arcliva-teal": "#2D7A6D",
+              "arcliva-teal-dark": "#1A5C52",
+              "arcliva-teal-light": "#52A895",
+              "charcoal": "#1A1A1A"
+            },
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .bg-teal-gradient {
+        background: linear-gradient(135deg, #2D7A6D 0%, #1A5C52 100%);
+      }
+      .bg-soft-gradient {
+        background: linear-gradient(135deg, #F0F9F7 0%, #FFFFFF 100%);
+      }
+    </style>
+</head>
+<body class="bg-background font-body text-charcoal selection:bg-arcliva-teal-light selection:text-white">
+<!-- Shared TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-[#E5E7EB] shadow-sm">
+<div class="flex justify-between items-center h-20 px-6 md:px-12 max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-2"><a href="index.html"><img alt="ARCLIVA Logo" class="h-8 w-auto object-contain" src="assets/img3.jpg"></a></div>
+<div class="hidden md:flex items-center gap-8 font-['Inter'] font-medium text-sm antialiased">
+<a class="text-[#6B7280] hover:text-[#2D7A6D] transition-colors font-['Inter'] font-medium text-sm antialiased" href="index.html">Home</a>
+<a class="text-[#6B7280] hover:text-[#2D7A6D] transition-colors font-['Inter'] font-medium text-sm antialiased" href="ecosystem.html">Ecosystem</a>
+<a class="text-[#6B7280] hover:text-[#2D7A6D] transition-colors font-['Inter'] font-medium text-sm antialiased" href="systems.html">Systems</a>
+<a class="text-[#6B7280] hover:text-[#2D7A6D] transition-colors font-['Inter'] font-medium text-sm antialiased" href="about.html">About Us</a>
+</div>
+<a href="checkout.html" class="bg-[#2D7A6D] text-white px-6 py-2.5 rounded-md font-['Inter'] font-medium text-sm antialiased active:scale-95 duration-200 shadow-sm hover:opacity-90">Get Access</a>
+</div>
+</nav>
+<main class="max-w-5xl mx-auto px-6 py-12 md:py-20">
+<!-- Success Header -->
+<header class="text-center mb-16">
+<div class="inline-flex items-center justify-center w-20 h-20 bg-arcliva-teal/10 rounded-full mb-6 text-arcliva-teal">
+<span class="material-symbols-outlined text-4xl" style='font-variation-settings: "FILL" 1;'>check_circle</span>
+</div>
+<p class="text-arcliva-teal font-semibold tracking-wider uppercase text-sm mb-2" style="">Welcome to Arcliva Wellness Systems</p>
+<h1 class="text-5xl md:text-6xl font-black tracking-tight text-charcoal mb-6" style="">You’re in.</h1>
+<div class="max-w-2xl mx-auto p-8 rounded-2xl shadow-[0_10px_40px_-10px_rgba(45,122,109,0.3)] flex flex-col items-center text-center" style="background: linear-gradient(135deg, #2D7A6D 0%, #1A5C52 100%);">
+<p class="text-lg mb-4 font-medium text-white opacity-90" style="">The Ecosystem includes:</p>
+<div class="flex flex-wrap justify-center gap-3">
+<span class="px-5 py-2.5 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 text-sm font-semibold text-white tracking-wide" style="">• One Daily Foundation Routine</span>
+<span class="px-5 py-2.5 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 text-sm font-semibold text-white tracking-wide" style="">All 5 Systems: Sleep • Energy • Stress • Digestion • Immune</span>
+</div>
+</div>
+</header>
+<!-- The Three Steps Bento Layout -->
+<section class="mb-20">
+<h2 class="text-2xl font-bold mb-8 flex items-center gap-3" style="">
+<span class="w-8 h-1 bg-arcliva-teal rounded-full"></span>
+                Your next 3 steps
+            </h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Step 1 -->
+<div class="bg-white p-8 rounded-xl border border-outline-variant hover:border-arcliva-teal transition-all group flex flex-col">
+<div class="text-4xl font-black text-arcliva-teal/20 group-hover:text-arcliva-teal/40 transition-colors mb-4" style="">01</div>
+<h3 class="text-xl font-bold mb-4" style="">Save the Arcliva app to your home screen</h3>
+<p class="text-secondary text-sm leading-relaxed mb-6" style="">To get the app on your device click the icon below and follow the instructions on the next page</p>
+<div class="mt-auto">
+<button class="w-full py-3 bg-arcliva-teal text-white rounded-lg font-bold flex items-center justify-center gap-2 hover:bg-arcliva-teal-dark transition-colors" style="">
+<span class="material-symbols-outlined text-xl" style="">install_mobile</span>
+                            Install App
+                        </button>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="bg-white p-8 rounded-xl border border-outline-variant hover:border-arcliva-teal transition-all group flex flex-col">
+<div class="text-4xl font-black text-arcliva-teal/20 group-hover:text-arcliva-teal/40 transition-colors mb-4" style="">02</div>
+<h3 class="text-xl font-bold mb-4" style="">Create Your Account</h3>
+<p class="text-secondary text-sm leading-relaxed mb-6" style="">You will receive a confirmation emails using the same email address you used at checkout. This will take you to a create password page to setup your credentials.</p>
+<div class="mt-auto flex items-center gap-2 text-arcliva-teal font-semibold text-sm" style="">
+<span class="material-symbols-outlined" style="">mail</span>
+                        Check your inbox
+                    </div>
+</div>
+<!-- Step 3 -->
+<div class="bg-white p-8 rounded-xl border border-outline-variant hover:border-arcliva-teal transition-all group flex flex-col">
+<div class="text-4xl font-black text-arcliva-teal/20 group-hover:text-arcliva-teal/40 transition-colors mb-4" style="">03</div>
+<h3 class="text-xl font-bold mb-4" style="">Start Your Wellness Journey</h3>
+<p class="text-secondary text-sm leading-relaxed mb-6" style="">Once you're inside the app: Begin with Start Here to build your foundation, then follow your Daily Routine for a repeatable structure.</p>
+<div class="mt-auto">
+<div class="flex items-center gap-2 text-arcliva-teal-light font-bold text-sm" style="">
+<span class="material-symbols-outlined" style='font-variation-settings: "FILL" 1;'>rocket_launch</span>
+                            Ready to Begin
+                        </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Arcliva Clarity Section (Dark Theme) -->
+<!-- Quick Help & Support -->
+<section class="grid grid-cols-1 gap-12 items-start mb-20 max-w-2xl mx-auto w-full">
+<div class="bg-surface-container-low p-8 rounded-xl border border-outline-variant">
+<h3 class="text-xl font-bold mb-4 flex items-center gap-2" style="">
+<span class="material-symbols-outlined text-arcliva-teal" style="">help_center</span>
+                    Quick help
+                </h3>
+<ul class="space-y-4 text-secondary text-sm">
+<li class="flex items-start gap-3" style="">
+<span class="material-symbols-outlined text-arcliva-teal text-lg" style="">info</span>
+                        Access is tied to the email you used at checkout.
+                    </li>
+<li class="flex items-start gap-3" style="">
+<span class="material-symbols-outlined text-arcliva-teal text-lg" style="">mark_email_unread</span>
+                        If you don’t see your access email within a few minutes, check spam or promotions.
+                    </li>
+<li class="flex items-start gap-3" style="">
+<span class="material-symbols-outlined text-arcliva-teal text-lg" style="">support_agent</span>
+                        Still stuck? Go to <a class="text-arcliva-teal font-bold hover:underline" href="about.html" style="">FAQ &amp; Support</a> or contact support.
+                    </li>
+</ul>
+</div>
+<div class="p-8 border border-dashed border-outline-variant rounded-xl">
+<h3 class="text-lg font-bold mb-4 uppercase tracking-widest text-secondary flex items-center gap-2" style="">
+<span class="material-symbols-outlined" style="">gavel</span>
+                    Important
+                </h3>
+<p class="text-xs leading-relaxed text-secondary/70" style="">
+                    Educational use only. Not medical advice. Not intended to diagnose, treat, cure, or prevent any disease. Results may vary.
+                </p>
+</div>
+</section>
+</main>
+<!-- Shared Footer -->
+<!-- Footer -->
+<footer class="w-full py-8 flex flex-col md:flex-row justify-between items-center gap-4 bg-[#F8F9FA] dark:bg-slate-950 border-t border-gray-200 dark:border-slate-800">
+<div class="max-w-screen-2xl mx-auto w-full flex flex-col md:flex-row justify-between items-center gap-4 px-6 md:px-12">
+<p class="font-['Inter'] text-xs text-gray-500">© 2026 Arcliva Wellness Systems. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="font-['Inter'] text-xs text-gray-500 hover:text-[#2D7A6D] transition-colors" href="privacy.html">Privacy Policy</a>
+<a class="font-['Inter'] text-xs text-gray-500 hover:text-[#2D7A6D] transition-colors" href="terms.html">Terms of Service</a>
+<a class="font-['Inter'] text-xs text-gray-500 hover:text-[#2D7A6D] transition-colors" href="compliance.html">Compliance</a>
+</div>
+</div>
+</footer>
+<!-- Payment Verification Script -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const params = new URLSearchParams(window.location.search);
+    const main = document.querySelector('main');
+
+    if (params.get('success') !== 'true') {
+        // No valid payment — show redirect message
+        main.innerHTML = `
+            <div class="max-w-lg mx-auto text-center px-6 py-32">
+                <div class="inline-flex items-center justify-center w-16 h-16 bg-gray-100 rounded-full mb-6">
+                    <span class="material-symbols-outlined text-3xl text-gray-400">lock</span>
+                </div>
+                <h1 class="text-2xl font-bold text-charcoal mb-4">Access Required</h1>
+                <p class="text-gray-500 mb-8">This page is only accessible after completing a purchase.</p>
+                <a href="checkout.html" class="inline-flex items-center gap-2 bg-arcliva-teal text-white px-8 py-3 rounded-xl font-bold hover:bg-arcliva-teal-dark transition-colors">
+                    <span class="material-symbols-outlined">shopping_cart</span>
+                    Go to Checkout
+                </a>
+            </div>
+        `;
+    }
+});
+</script>
+</body></html>

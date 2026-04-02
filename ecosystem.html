@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ARCLIVA Ecosystem | Structured Supplement Routines</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-secondary-fixed-variant": "#065046",
+                        "surface": "#f8f9fa",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-primary": "#8ad4c5",
+                        "surface-container": "#edeeef",
+                        "tertiary-fixed-dim": "#81d6c2",
+                        "on-secondary-container": "#306e64",
+                        "surface-variant": "#e1e3e4",
+                        "primary-fixed": "#a6f1e1",
+                        "on-error-container": "#93000a",
+                        "tertiary": "#006152",
+                        "secondary-fixed": "#afefe1",
+                        "tertiary-container": "#1c7b6a",
+                        "surface-container-low": "#f3f4f5",
+                        "primary-container": "#2d7a6d",
+                        "secondary": "#29685e",
+                        "on-surface": "#191c1d",
+                        "on-primary-container": "#bdfff0",
+                        "primary": "#056155",
+                        "surface-container-high": "#e7e8e9",
+                        "inverse-surface": "#2e3132",
+                        "primary-fixed-dim": "#8ad4c5",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "background": "#f8f9fa",
+                        "tertiary-fixed": "#9df3dd",
+                        "on-background": "#191c1d",
+                        "error": "#ba1a1a",
+                        "on-tertiary-fixed-variant": "#005144",
+                        "on-error": "#ffffff",
+                        "secondary-container": "#afefe1",
+                        "on-surface-variant": "#3f4946",
+                        "outline-variant": "#bec9c5",
+                        "on-primary-fixed-variant": "#005046",
+                        "surface-dim": "#d9dadb",
+                        "inverse-on-surface": "#f0f1f2",
+                        "on-tertiary-container": "#baffed",
+                        "on-primary-fixed": "#00201b",
+                        "outline": "#6f7976",
+                        "secondary-fixed-dim": "#94d2c6",
+                        "on-primary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "surface-tint": "#176a5d",
+                        "surface-container-highest": "#e1e3e4",
+                        "surface-bright": "#f8f9fa",
+                        "on-tertiary-fixed": "#00201a",
+                        "on-secondary-fixed": "#00201b",
+                        "arcliva-teal": "#2D7A6D",
+                        "arcliva-teal-dark": "#1A5C52",
+                        "arcliva-teal-light": "#52A895",
+                        "charcoal": "#1A1A1A"
+                    },
+                    fontFamily: {
+                        "headline": ["Inter", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .teal-gradient { background: linear-gradient(135deg, #2D7A6D 0%, #1A5C52 100%); }
+        .light-teal-gradient { background: linear-gradient(135deg, #F0F9F7 0%, #E8F5F2 100%); }
+        .glass-card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-arcliva-teal-light selection:text-white" data-mode="connect">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-[#E5E7EB] shadow-sm">
+<div class="flex justify-between items-center h-20 px-6 md:px-12 max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-2"><a href="index.html"><img alt="ARCLIVA Logo" class="h-8 w-auto object-contain" src="assets/img3.jpg"></a></div>
+<div class="hidden md:flex items-center gap-8 font-['Inter'] font-medium text-sm antialiased">
+<a class="text-[#6B7280] hover:text-[#2D7A6D] transition-colors font-['Inter'] font-medium text-sm antialiased" href="index.html">Home</a>
+<a class="text-[#2D7A6D] border-b-2 border-[#52A895] pb-1 font-['Inter'] font-medium text-sm antialiased" href="ecosystem.html">Ecosystem</a>
+<a class="text-[#6B7280] hover:text-[#2D7A6D] transition-colors font-['Inter'] font-medium text-sm antialiased" href="systems.html">Systems</a>
+<a class="text-[#6B7280] hover:text-[#2D7A6D] transition-colors font-['Inter'] font-medium text-sm antialiased" href="about.html">About Us</a>
+</div>
+<a href="checkout.html" class="bg-[#2D7A6D] text-white px-6 py-2.5 rounded-md font-['Inter'] font-medium text-sm antialiased active:scale-95 duration-200 shadow-sm hover:opacity-90">Get Access</a>
+</div>
+</nav>
+<main class="max-w-7xl mx-auto px-6">
+<!-- Hero Section -->
+<section class="text-center pt-20 pb-10">
+<h2 class="text-5xl md:text-7xl font-black tracking-tighter mb-4 text-charcoal" style="">The Eco<span class="" style="color: rgb(45, 122, 109);">system</span></h2>
+<h1 class="text-lg md:text-xl font-medium text-gray-600 tracking-tight mb-6 max-w-2xl mx-auto leading-relaxed" style="">
+                Structured daily supplement routines — powered by Arcliva Clarity™ AI.
+            </h1>
+<div class="flex flex-col md:flex-row items-center justify-center gap-4 mt-2">
+<a href="checkout.html" class="bg-arcliva-teal text-white px-8 py-4 rounded-xl text-lg font-bold hover:bg-arcliva-teal-dark transition-all shadow-lg shadow-arcliva-teal/20" style="min-height: 60px; display:inline-flex; align-items:center;">
+                    GET THE ECOSYSTEM
+                </a>
+<button onclick="window.voiceflow.chat.open()" class="px-8 py-4 rounded-xl text-lg font-bold transition-all" style="background: linear-gradient(135deg, #F0F9F7 0%, #E8F5F2 100%); color: #2D7A6D; min-width: 257px; min-height: 60px;">ASK ARCLIVA</button></div>
+</section>
+<!-- What You're Buying -->
+<section class="pt-6 pb-16">
+<h2 class="font-black tracking-[0.2em] uppercase text-center mb-6" style="color: #1A1A1A; font-size: 22px;">WHAT YOU'RE ACTUALLY BUYING</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-white p-8 rounded-2xl border border-outline-variant hover:border-arcliva-teal transition-all group">
+<span class="material-symbols-outlined text-arcliva-teal text-4xl mb-4" data-icon="app_registration" style="">app_registration</span>
+<h3 class="text-xl font-bold mb-2" style="">Access to the Arcliva Wellness Systems App</h3>
+<p class="text-medium-gray text-sm leading-relaxed" style="">Your digital wellness platform for managing every system and tracking your personalized daily progress.</p>
+</div>
+<div class="bg-white p-8 rounded-2xl border border-outline-variant hover:border-arcliva-teal transition-all group">
+<span class="material-symbols-outlined text-arcliva-teal text-4xl mb-4" data-icon="bolt" style="">bolt</span>
+<h3 class="text-xl font-bold mb-2" style="">Smart Shopping List + Direct Access to Buy Supplements</h3>
+<p class="text-medium-gray text-sm leading-relaxed" style="">Direct links to the supplements in each system. Save time and money knowing what to buy first.</p>
+</div>
+<div class="bg-white p-8 rounded-2xl border border-outline-variant hover:border-arcliva-teal transition-all group">
+<span class="material-symbols-outlined text-arcliva-teal text-4xl mb-4" data-icon="psychology" style="">psychology</span>
+<h3 class="text-xl font-bold mb-2" style="">Arcliva Clarity™</h3>
+<p class="text-medium-gray text-sm leading-relaxed" style="">Your 24/7 AI general wellness assistant that helps you optimize your supplements and routine.</p>
+</div>
+</div>
+</section>
+<!-- All In One: Foundation -->
+<section class="py-24 bg-white rounded-3xl p-12 my-12 border border-outline-variant overflow-hidden relative">
+<div class="absolute top-0 right-0 w-64 h-64 bg-arcliva-teal/5 rounded-full -mr-32 -mt-32"></div>
+<div class="relative z-10">
+<div class="text-arcliva-teal font-black text-sm tracking-widest uppercase mb-4" style="">ALL IN ONE: YOUR FOUNDATION</div>
+<h2 class="text-4xl font-black mb-6" style="">ALL FIVE SYSTEMS INCLUDED</h2>
+<div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+<a href="systems.html" class="bg-surface p-6 rounded-xl border-l-4 border-arcliva-teal hover:shadow-md transition-all">
+<div class="font-bold text-lg mb-1" style="">Sleep Architecture</div>
+<div class="text-xs text-medium-gray" style=""><p class="" style="">For deeper rest and better recovery.</p></div>
+</a>
+<a href="systems.html" class="bg-surface p-6 rounded-xl border-l-4 border-arcliva-teal hover:shadow-md transition-all">
+<div class="font-bold text-lg mb-1" style="">Fatigue Fix</div>
+<div class="text-xs text-medium-gray" style=""><span class="" style="color: rgb(34, 34, 34); font-family: Arial, Helvetica, sans-serif; font-size: small; background-color: rgb(255, 255, 255);">Steadier energy through the day.</span></div>
+</a>
+<a href="systems.html" class="bg-surface p-6 rounded-xl border-l-4 border-arcliva-teal hover:shadow-md transition-all">
+<div class="font-bold text-lg mb-1" style="">Stress Defense</div>
+<div class="text-xs text-medium-gray" style=""><span class="" style="color: rgb(34, 34, 34); font-family: Arial, Helvetica, sans-serif; font-size: small; background-color: rgb(255, 255, 255);">More stability under pressure.</span></div>
+</a>
+<a href="systems.html" class="bg-surface p-6 rounded-xl border-l-4 border-arcliva-teal hover:shadow-md transition-all">
+<div class="font-bold text-lg mb-1" style="">Digestive Restoration</div>
+<div class="text-xs text-medium-gray" style=""><span class="" style="color: rgb(34, 34, 34); font-family: Arial, Helvetica, sans-serif; font-size: small; background-color: rgb(255, 255, 255);">Support for digestive comfort and function.</span></div>
+</a>
+<a href="systems.html" class="bg-surface p-6 rounded-xl border-l-4 border-arcliva-teal hover:shadow-md transition-all">
+<div class="font-bold text-lg mb-1" style="">Immune Strength</div>
+<div class="text-xs text-medium-gray" style=""><span class="" style="color: rgb(34, 34, 34); font-family: Arial, Helvetica, sans-serif; font-size: small; background-color: rgb(255, 255, 255);">Helps strengthen your baseline.</span></div>
+</a>
+</div>
+</div>
+</section>
+<!-- Inside Each System: Bento Grid -->
+<section class="py-16">
+<h2 class="text-xs font-black tracking-[0.2em] text-gray-400 uppercase mb-8" style="">INSIDE EACH SYSTEM</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-6 h-auto md:h-[600px]">
+<div class="md:col-span-1 md:row-span-2 bg-arcliva-teal text-white p-10 rounded-3xl flex flex-col justify-between">
+<div>
+<h3 class="text-3xl font-black leading-tight mb-6" style="">Start Here (Days 1–3)</h3>
+<p class="text-white/80" style=""></p><div class="mb-6 text-white/90 font-medium" style="">Your clear first step. We show you exactly how to begin so you can stop guessing and start rebuilding with confidence.</div><ul class="space-y-2 text-white/80">
+<li class="flex items-start gap-2" style=""><span class="" style="">•</span><span class="" style="">Know exactly what to do from day one with zero guessing</span></li>
+<li class="flex items-start gap-2" style=""><span class="" style="">•</span><span class="" style="">Build momentum before adding more supplements</span></li>
+<li class="flex items-start gap-2" style=""><span class="" style="">•</span><span class="" style="">Avoid wasting time and money on trial and error</span></li>
+<li class="flex items-start gap-2" style=""><span class="" style="">•</span><span class="" style="">Follow a system that feels practical and built for real life</span></li>
+</ul><p class="" style=""></p>
+</div>
+<span class="material-symbols-outlined text-6xl opacity-30" data-icon="rocket_launch" style="">rocket_launch</span>
+</div>
+<div class="bg-white p-8 rounded-3xl border border-outline-variant flex flex-col justify-between">
+<div>
+<h4 class="font-bold text-xl mb-2" style="">Daily Routine</h4>
+<p class="text-medium-gray text-sm" style=""></p><p class="" style="">Shows you what to take, when to take it, and why it matters so your routine feels clear, steady, and easy to follow in real life.</p><p class="" style=""><br style="color: rgb(34, 34, 34); font-family: Arial, Helvetica, sans-serif; font-size: small;"/></p><p class="" style=""></p>
+</div>
+<div class="flex items-center gap-2 text-arcliva-teal font-bold text-sm" style="">
+<span class="material-symbols-outlined" data-icon="schedule" style="">schedule</span>STRUCTURED SYSTEMS</div>
+</div>
+<div class="bg-white p-8 rounded-3xl border border-outline-variant flex flex-col justify-between">
+<div>
+<h4 class="font-bold text-xl mb-2" style="">Shopping List</h4>
+<p class="text-medium-gray text-sm" style=""></p><p class="" style="">Shows you what to buy first, what matters most, and what’s optional so you can save money and choose between budget and premium options.</p><p class="" style=""><br style="color: rgb(34, 34, 34); font-family: Arial, Helvetica, sans-serif; font-size: small;"/></p><p class="" style=""></p>
+</div>
+<div class="flex items-center gap-2 text-arcliva-teal font-bold text-sm" style="">
+<span class="material-symbols-outlined" data-icon="shopping_cart" style="">shopping_cart</span>
+                        VERIFIED SOURCES
+                    </div>
+</div>
+<div class="bg-white p-8 rounded-3xl border border-outline-variant flex flex-col justify-between">
+<div>
+<h4 class="font-bold text-xl mb-2" style="">Education &amp; Execution</h4>
+<p class="text-medium-gray text-sm" style=""></p><p class="" style="">Helps you understand how the supplements work together so you can follow your system with more clarity, confidence, and consistency.</p><p class="" style=""><br style="color: rgb(34, 34, 34); font-family: Arial, Helvetica, sans-serif; font-size: small;"/></p><p class="" style=""></p>
+</div>
+<div class="flex items-center gap-2 text-arcliva-teal font-bold text-sm" style="">
+<span class="material-symbols-outlined" data-icon="school" style="">school</span>
+                        DEEP LEARNING
+                    </div>
+</div>
+<div class="bg-white p-8 rounded-3xl border border-outline-variant flex flex-col justify-between">
+<div>
+<h4 class="font-bold text-xl mb-2" style="">Audio Playbacks</h4>
+<p class="text-medium-gray text-sm" style=""><span class="" style="color: rgb(34, 34, 34); font-family: Arial, Helvetica, sans-serif; font-size: small;">Lets you listen instead of read. Follow your system while you’re driving, walking, or moving through your day.</span></p>
+</div>
+<div class="flex items-center gap-2 text-arcliva-teal font-bold text-sm" style="">
+<span class="material-symbols-outlined" data-icon="headphones" style="">headphones</span>
+                        VOICE GUIDANCE
+                    </div>
+</div>
+</div>
+<div class="mt-6 bg-surface-container p-6 rounded-2xl flex items-center justify-center gap-3">
+<span class="material-symbols-outlined text-arcliva-teal" data-icon="deployed_code" style="">deployed_code</span>
+<span class="font-bold text-charcoal" style="">Universal Tools Included:</span>
+<span class="text-medium-gray" style="">Targeted breathwork techniques and simple nighttime environment adjustments to quickly calm your nervous system, improve focus, and help your body transition without relying on willpower.</span>
+</div>
+</section>
+<!-- AI Section - Updated to match IMAGE_5 -->
+<section class="py-12 my-20 bg-[#020907] text-white rounded-[2rem] p-10 md:p-16 relative overflow-hidden">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="space-y-8">
+<div class="flex items-center gap-4">
+<div class="w-16 h-16 rounded-full border border-arcliva-teal-light/30 flex items-center justify-center shadow-[0_0_20px_rgba(82,168,149,0.2)]">
+<span class="material-symbols-outlined text-3xl text-arcliva-teal-light" data-icon="wb_sunny" style='font-variation-settings: "FILL" 0, "wght" 300;'>wb_sunny</span>
+</div>
+<div>
+<h2 class="text-3xl font-black tracking-tight" style="">ARCLIVA CLARITY™</h2>
+<div class="text-[0.65rem] font-bold tracking-[0.2em] text-white/40 uppercase" style="">THE INTELLIGENCE LAYER BEHIND THE SYSTEM</div>
+</div>
+</div>
+<ul class="space-y-5">
+<li class="flex items-center gap-3" style="">
+<div class="w-1.5 h-1.5 rounded-full bg-arcliva-teal-light"></div>
+<span class="text-xs font-black tracking-widest text-white/90" style="">OPTIMIZE TIMING</span>
+</li>
+<li class="flex items-center gap-3" style="">
+<div class="w-1.5 h-1.5 rounded-full bg-arcliva-teal-light"></div>
+<span class="text-xs font-black tracking-widest text-white/90" style="">ADD SUPPLEMENTS YOU CURRENTLY TAKE</span>
+</li>
+<li class="flex items-center gap-3" style="">
+<div class="w-1.5 h-1.5 rounded-full bg-arcliva-teal-light"></div>
+<span class="text-xs font-black tracking-widest text-white/90" style="">FLAG CONFLICTS</span>
+</li>
+<li class="flex items-center gap-3" style="">
+<div class="w-1.5 h-1.5 rounded-full bg-arcliva-teal-light"></div>
+<span class="text-xs font-black tracking-widest text-white/90" style="">ADJUST TO YOUR SCHEDULE</span>
+</li>
+</ul>
+</div>
+<div class="relative">
+<div class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm">
+<div class="space-y-4">
+<div class="bg-black/40 border border-white/5 rounded-xl p-4">
+<div class="text-sm text-gray-400" style="">Ask a question.</div>
+</div>
+<div class="bg-[#051a15] border border-arcliva-teal/20 rounded-xl p-4">
+<div class="text-sm font-medium text-arcliva-teal-light" style="">Get a structured answer.</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Results & Pricing -->
+<section class="py-20">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-black mb-4" style=""><div class="text-[#1A1A1A] mb-2" style="">THE RESULT:</div><div class="text-[#6B7280]" style="">Minimal Supplements.</div><div class="text-[#6B7280]" style="">Clear Execution.</div><div class="text-[#6B7280]" style="">Maximum Clarity.</div></h2>
+<p class="text-medium-gray max-w-2xl mx-auto" style=""><br/></p>
+</div>
+<div class="mx-auto bg-white border-2 border-arcliva-teal p-12 rounded-[2rem] shadow-2xl shadow-arcliva-teal/10 relative max-w-4xl">
+<div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-arcliva-teal text-white px-6 py-1 rounded-full text-xs font-bold tracking-widest" style="">MOST COMPREHENSIVE</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="text-left md:pr-8">
+<h3 class="text-4xl md:text-5xl font-black mb-4 text-charcoal" style="">LIFETIME ACCESS</h3>
+<p class="text-lg text-medium-gray mb-2" style="">AI included. Supplements purchased separately.</p>
+<p class="text-sm text-gray-400" style="">The ultimate system for those serious about their long-term cognitive and physical performance.</p>
+</div>
+<div class="space-y-8">
+<div class="space-y-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-arcliva-teal" style='font-variation-settings: "FILL" 1;'>check_circle</span>
+<span class="font-semibold text-charcoal" style="">All 5 Core Systems</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-arcliva-teal" style='font-variation-settings: "FILL" 1;'>check_circle</span>
+<span class="font-semibold text-charcoal" style="">Arcliva Clarity™ AI Access</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-arcliva-teal" style='font-variation-settings: "FILL" 1;'>check_circle</span>
+<span class="font-semibold text-charcoal" style="">Continuous System Updates</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-arcliva-teal" style='font-variation-settings: "FILL" 1;'>check_circle</span>
+<span class="font-semibold text-charcoal" style="">Lifetime Dashboard Access</span>
+</div>
+</div>
+<a href="checkout.html" class="w-full bg-arcliva-teal text-white py-4 rounded-xl text-xl font-black hover:bg-arcliva-teal-dark transition-all shadow-lg shadow-arcliva-teal/20" style="display:block; text-align:center;">
+            GET THE ECOSYSTEM — $147
+        </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Guarantee -->
+<section class="py-24 max-w-4xl mx-auto">
+<div class="light-teal-gradient border border-arcliva-teal/20 p-12 rounded-[2rem] flex flex-col md:flex-row items-center gap-10">
+<div class="flex-shrink-0 w-32 h-32 rounded-full bg-white border-4 border-arcliva-teal flex items-center justify-center">
+<span class="material-symbols-outlined text-5xl text-arcliva-teal" data-icon="verified_user" style="">verified_user</span>
+</div>
+<div>
+<h2 class="text-2xl font-black mb-4" style="">THE 7-DAY CLARITY GUARANTEE</h2>
+<p class="text-lg leading-relaxed text-charcoal opacity-80" style="">
+                        If you don’t get clarity on what to take, when to take it, and why it matters — request a refund within 7 days.
+                    </p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-8 flex flex-col md:flex-row justify-between items-center gap-4 bg-[#F8F9FA] dark:bg-slate-950 border-t border-gray-200 dark:border-slate-800">
+<div class="max-w-screen-2xl mx-auto w-full flex flex-col md:flex-row justify-between items-center gap-4 px-6 md:px-12">
+<p class="font-['Inter'] text-xs text-gray-500">© 2026 Arcliva Wellness Systems. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="font-['Inter'] text-xs text-gray-500 hover:text-[#2D7A6D] transition-colors" href="privacy.html">Privacy Policy</a>
+<a class="font-['Inter'] text-xs text-gray-500 hover:text-[#2D7A6D] transition-colors" href="terms.html">Terms of Service</a>
+<a class="font-['Inter'] text-xs text-gray-500 hover:text-[#2D7A6D] transition-colors" href="compliance.html">Compliance</a>
+</div>
+</div>
+</footer>
+<script type="text/javascript">
+  (function(d, t) {
+      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      v.onload = function() {
+        window.voiceflow.chat.load({
+          verify: { projectID: '69b24adb33a5278ad14bccc6' },
+          url: 'https://general-runtime.voiceflow.com',
+          versionID: 'production',
+          voice: {
+            url: "https://runtime-api.voiceflow.com"
+          }
+        });
+      }
+      v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+  })(document, 'script');
+</script>
+</body></html>
