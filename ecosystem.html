@@ -83,22 +83,50 @@
         .teal-gradient { background: linear-gradient(135deg, #2D7A6D 0%, #1A5C52 100%); }
         .light-teal-gradient { background: linear-gradient(135deg, #F0F9F7 0%, #E8F5F2 100%); }
         .glass-card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); }
+    
+    @media (max-width: 767px) {
+      main section .flex-1 { text-align: center; }
+      main section .flex-col { align-items: center; }
+      main section p, main section h1, main section h2, main section h3, main section h4 { text-align: center; }
+      main section .sm\:flex-row { justify-content: center; }
+    }
     </style>
 </head>
 <body class="bg-surface text-on-surface selection:bg-arcliva-teal-light selection:text-white" data-mode="connect">
 <!-- TopNavBar -->
+<!-- Top Navigation -->
 <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-[#E5E7EB] shadow-sm">
 <div class="flex justify-between items-center h-20 px-6 md:px-12 max-w-screen-2xl mx-auto">
-<div class="flex items-center gap-2"><a href="index.html"><img alt="ARCLIVA Logo" class="h-8 w-auto object-contain" src="assets/img3.jpg"></a></div>
-<div class="hidden md:flex items-center gap-8 font-['Inter'] font-medium text-sm antialiased">
+<div class="text-2xl font-black tracking-tight text-[#1A1A1A] flex items-center gap-2">
+<a href="index.html"><img alt="ARCLIVA Logo" class="h-8 w-auto object-contain" src="assets/img3.jpg"></a>
+</div>
+<div class="hidden md:flex items-center gap-8">
 <a class="text-[#6B7280] hover:text-[#2D7A6D] transition-colors font-['Inter'] font-medium text-sm antialiased" href="index.html">Home</a>
 <a class="text-[#2D7A6D] border-b-2 border-[#52A895] pb-1 font-['Inter'] font-medium text-sm antialiased" href="ecosystem.html">Ecosystem</a>
 <a class="text-[#6B7280] hover:text-[#2D7A6D] transition-colors font-['Inter'] font-medium text-sm antialiased" href="systems.html">Systems</a>
 <a class="text-[#6B7280] hover:text-[#2D7A6D] transition-colors font-['Inter'] font-medium text-sm antialiased" href="about.html">About Us</a>
 </div>
-<a href="checkout.html" class="bg-[#2D7A6D] text-white px-6 py-2.5 rounded-md font-['Inter'] font-medium text-sm antialiased active:scale-95 duration-200 shadow-sm hover:opacity-90">Get Access</a>
+<a href="checkout.html" class="hidden md:inline-block bg-[#2D7A6D] text-white px-6 py-2.5 rounded-md font-['Inter'] font-medium text-sm antialiased active:scale-95 duration-200 shadow-sm hover:opacity-90">Get Access</a>
+<button id="mobile-menu-btn" class="md:hidden flex items-center justify-center w-10 h-10 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu">
+<span class="material-symbols-outlined text-[#1A1A1A] text-[28px]">menu</span>
+</button>
+</div>
+<div id="mobile-menu" class="hidden md:hidden bg-white border-t border-[#E5E7EB] px-6 pb-6">
+<div class="flex flex-col pt-2">
+<a class="block text-[#6B7280] hover:text-[#2D7A6D] transition-colors text-base py-3 border-b border-[#E5E7EB]" href="index.html">Home</a>
+<a class="block text-[#2D7A6D] font-semibold text-base py-3 border-b border-[#E5E7EB]" href="ecosystem.html">Ecosystem</a>
+<a class="block text-[#6B7280] hover:text-[#2D7A6D] transition-colors text-base py-3 border-b border-[#E5E7EB]" href="systems.html">Systems</a>
+<a class="block text-[#6B7280] hover:text-[#2D7A6D] transition-colors text-base py-3 border-b border-[#E5E7EB]" href="about.html">About Us</a>
+<div class="pt-5">
+<a href="checkout.html" class="block bg-[#2D7A6D] text-white text-center py-3.5 rounded-md font-['Inter'] font-semibold text-sm active:scale-95 duration-200 shadow-sm hover:opacity-90">Get Access</a>
+</div>
+</div>
 </div>
 </nav>
+<script>
+(function(){var btn=document.getElementById('mobile-menu-btn');var menu=document.getElementById('mobile-menu');if(btn&&menu){btn.addEventListener('click',function(){menu.classList.toggle('hidden');var icon=btn.querySelector('.material-symbols-outlined');icon.textContent=menu.classList.contains('hidden')?'menu':'close';});}})();
+</script>
+
 <main class="max-w-7xl mx-auto px-6">
 <!-- Hero Section -->
 <section class="text-center pt-20 pb-10">
