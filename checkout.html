@@ -218,10 +218,27 @@
 <p class="text-xs text-gray-500 leading-relaxed">You'll be redirected to Stripe's secure checkout to enter your payment details. We never see or store your card information.</p>
 </div>
 <!-- Trusted Badges -->
-<div class="flex items-center justify-between py-4 grayscale opacity-50 contrast-125">
-<img alt="Visa" class="h-4 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbk53Y21_Et591gjgChFzM5V_rFbb5ZIflrUfm_uixJrGyPS4DA6Lv8eGtx24KA76jv-KonVZGOEs57rKId8vhIW7fCh18wWZ8k6xNmkeIhVEyK7ubnhkj4rDEaCeunh9llp-Jkunw1EZEl_3htS1sCaEFObsui4_zc9M6y3K3fOh6tTus5kNZ4hRk44iuYmx0aRKiH7lXCXX4XCpLqdhVqyJB8Gz__T3DHPtQ6FL43F7UggmzfkR7eZ5byCg2XeT3wosQppVD8sI"/>
-<img alt="Mastercard" class="h-6 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvHct0yPHtZAowpXXq2Bt7rJ8g7dVa0PUCag31eDI5vFPzRPBGspIp8RHDdtE2La_e79NwaL8aZsvwjK9KnzAllQgVLTvIGlAHTeZwzVedY7seCkDX3KLlptDeNL1NHsSQggyT4HQN1C4kcsYseqMF7WZuHEmqN9I_rmAB5I1UXK7WlaXiz0JvclopSmUKYW_BgsFBvpe6csgM8Xd03U6pk6OD467B5nCL8uQvFLep2pLy-Jts0rJbKP4G-f5URgjOGe0hZOZU_sM"/>
-<img alt="Stripe" class="h-6 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMjQ8Wzsrw8GI4Mm1MtiPtKFoSLLjdNgTPNMNbDruxSEYq_FGpvjekS9ic-pgRi_qQlkQhu2iA71eIWLw0KfIUEshn106Rk5HWuBxl2Nf6gpl85JfLg_2Mz_MqFlOgvYv7PBV-MAxJFbYkbrYnTIkhebv4Zlpz-Ybk8UTml-1sfaK-zCiG9JZ-KU7eC6lskILjGHp1Mqv9thJEXk98wNhpwTgYrduB6TEdeXLCFencAaUvRaKyMFA81SIrfB9ppNZ1Ns0G6BupJHM"/>
+<div class="flex items-center justify-center gap-3 py-4 flex-wrap">
+  <!-- Visa -->
+  <div class="h-8 px-2 flex items-center justify-center bg-white border border-gray-200 rounded" style="min-width:52px">
+    <svg viewBox="0 0 780 500" height="20" xmlns="http://www.w3.org/2000/svg"><rect width="780" height="500" rx="40" fill="#fff"/><path d="M293 331H224l44-261h69zm242-255a170 170 0 0 0-61-11c-67 0-115 36-115 87-1 38 34 59 60 71 26 13 35 21 35 32 0 17-21 25-40 25a136 136 0 0 1-64-14l-9-4-9 57a211 211 0 0 0 77 14c72 0 119-35 119-90 0-30-19-53-60-72-25-12-40-20-40-32 0-11 13-22 41-22a125 125 0 0 1 53 10l6 3zm105-6h-52c-16 0-28 5-35 22l-99 237h70s11-31 14-38h86c2 9 8 38 8 38h62zm-82 168 27-72 9-26 5 24 16 74zm-363-168-66 178-7-36c-13-42-52-88-96-110l61 230h71l106-262z" fill="#1434CB"/><path d="M131 70H22l-1 5c84 22 140 74 163 137L161 92c-4-17-15-22-30-22z" fill="#F9A51A"/></svg>
+  </div>
+  <!-- Mastercard -->
+  <div class="h-8 px-2 flex items-center justify-center bg-white border border-gray-200 rounded" style="min-width:52px">
+    <svg viewBox="0 0 131.39 86.9" height="22" xmlns="http://www.w3.org/2000/svg"><rect width="131.39" height="86.9" rx="7" fill="#fff"/><circle cx="47.35" cy="43.45" r="27.35" fill="#EB001B"/><circle cx="84.04" cy="43.45" r="27.35" fill="#F79E1B"/><path d="M65.7 21.05a27.32 27.32 0 0 1 0 44.8 27.32 27.32 0 0 1 0-44.8z" fill="#FF5F00"/></svg>
+  </div>
+  <!-- Amex -->
+  <div class="h-8 px-2 flex items-center justify-center bg-white border border-gray-200 rounded" style="min-width:52px">
+    <svg viewBox="0 0 780 500" height="20" xmlns="http://www.w3.org/2000/svg"><rect width="780" height="500" rx="40" fill="#2557D6"/><path d="M156 197h-40l-39 91V197H28l-28 68-28-68H-75v91h26v-70l36 70h22l36-70v70h26V197zm68 0H152v91h72v-22h-46v-16h45v-21h-45v-11h46zm130 0h-30l-20 29-21-29h-31l36 46-36 45h30l21-30 21 30h31l-36-45zm49 0h-27v91h27v-34h39v34h27v-91h-27v34h-39zm153 69h-47v-69h-27v91h74zM600 197h-40l-39 91h27l7-19h50l7 19h28zm-37 53 15-41 16 41z" fill="#fff" transform="translate(120 100)"/></svg>
+  </div>
+  <!-- Apple Pay -->
+  <div class="h-8 px-2 flex items-center justify-center bg-black border border-gray-200 rounded" style="min-width:52px">
+    <svg viewBox="0 0 165.521 105.965" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M150.698 0H14.823C6.633 0 0 6.633 0 14.823v76.319c0 8.19 6.633 14.823 14.823 14.823H150.698c8.19 0 14.823-6.633 14.823-14.823V14.823C165.521 6.633 158.888 0 150.698 0z" fill="#000"/><path d="M43.16 35.932c1.543-1.885 2.59-4.43 2.302-7.02-2.227.094-4.935 1.485-6.525 3.37-1.432 1.637-2.686 4.273-2.35 6.774 2.484.19 5.014-1.26 6.573-3.124zm2.28 3.614c-3.627-.215-6.717 2.058-8.444 2.058-1.75 0-4.412-1.95-7.306-1.896-3.764.052-7.254 2.186-9.17 5.577-3.93 6.784-1.034 16.838 2.79 22.367 1.864 2.72 4.088 5.715 7.028 5.61 2.786-.11 3.862-1.815 7.24-1.815 3.38 0 4.35 1.815 7.293 1.76 3.04-.055 4.957-2.72 6.82-5.44 2.12-3.1 2.994-6.1 3.05-6.254-.065-.02-5.85-2.25-5.905-8.94-.055-5.598 4.57-8.27 4.78-8.42-2.612-3.876-6.68-4.3-8.175-4.408zm26.87-9.712v44.46h6.9V57.77h9.54c8.726 0 14.853-5.985 14.853-14.636 0-8.652-6.015-14.3-14.63-14.3zm6.9 5.836h7.942c5.986 0 9.42 3.19 9.42 8.487 0 5.296-3.434 8.514-9.447 8.514H79.21zm35.807 29.37c0-5.378 4.127-8.678 11.443-9.1l8.432-.497v-2.373c0-3.43-2.317-5.405-6.195-5.405-3.678 0-5.968 1.76-6.52 4.513h-6.32c.387-5.72 5.24-9.93 13.068-9.93 7.686 0 12.677 4.072 12.677 10.426V74.74h-6.374v-5.24h-.15c-1.87 3.54-5.95 5.8-10.175 5.8-6.4 0-10.886-4.017-10.886-9.86zm19.875-2.95v-2.43l-7.574.47c-3.79.247-5.94 1.93-5.94 4.623 0 2.76 2.234 4.513 5.636 4.513 4.44 0 7.878-3.053 7.878-7.176z" fill="#fff"/></svg>
+  </div>
+  <!-- Google Pay -->
+  <div class="h-8 px-2 flex items-center justify-center bg-white border border-gray-200 rounded" style="min-width:52px">
+    <svg viewBox="0 0 41 17" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M19.526 2.635v4.083h2.518c.6 0 1.096-.202 1.488-.605.403-.402.605-.882.605-1.437 0-.544-.202-1.018-.605-1.421-.392-.403-.888-.605-1.488-.605zm0 5.52v4.736h-1.504V1.198h3.99c1.013 0 1.873.337 2.582 1.012.72.675 1.08 1.497 1.08 2.466 0 .991-.36 1.819-1.08 2.482-.697.665-1.559.997-2.583.997z" fill="#EA4335"/><path d="M27.865 4.89c1.07 0 1.913.285 2.535.856.621.57.932 1.351.932 2.341V13.9h-1.437v-1.318h-.067c-.6.947-1.415 1.42-2.44 1.42-.866 0-1.594-.257-2.181-.77-.588-.514-.882-1.158-.882-1.934 0-.816.31-1.47.93-1.958.621-.49 1.45-.735 2.486-.735 1.003 0 1.821.178 2.452.534v-.4c0-.567-.23-1.046-.688-1.437-.459-.39-.995-.585-1.609-.585-.927 0-1.66.39-2.197 1.17l-1.32-.856c.756-1.091 1.873-1.637 3.486-1.637zm-1.992 5.988c0 .389.164.718.491.988.327.27.72.405 1.178.405.637 0 1.207-.235 1.71-.704.502-.47.752-1.022.752-1.656-.48-.37-1.148-.556-2.005-.556-.623 0-1.142.15-1.557.451-.414.302-.57.633-.57 1.072z" fill="#FBBC05"/><path d="M38.507 5.015L34.11 15.485h-1.52l1.67-3.65-2.96-6.82h1.6l2.14 5.192h.03l2.08-5.192z" fill="#34A853"/><path d="M13.16 5.28c0-.463-.04-.908-.117-1.33H6.82v2.521h3.563c-.153.83-.618 1.532-1.317 2.007v1.662h2.133c1.245-1.148 1.964-2.837 1.964-4.86z" fill="#4285F4"/><path d="M6.82 13.436c1.788 0 3.287-.592 4.382-1.608L9.07 10.166c-.592.397-1.35.631-2.25.631-1.731 0-3.198-1.168-3.722-2.739H.898v1.715c1.088 2.165 3.325 3.663 5.923 3.663z" fill="#34A853"/><path d="M3.097 8.058a4.29 4.29 0 0 1-.224-1.366c0-.474.08-.934.224-1.366V3.611H.898A7.288 7.288 0 0 0 .12 6.692c0 1.175.28 2.288.779 3.081z" fill="#FBBC05"/><path d="M6.82 3.953a3.93 3.93 0 0 1 2.78 1.087l2.076-2.077A6.961 6.961 0 0 0 6.82 .945C4.222.945 1.985 2.443.898 4.608l2.199 1.715C3.622 4.75 5.09 3.953 6.82 3.953z" fill="#EA4335"/></svg>
+  </div>
 </div>
 <!-- Error Message -->
 <div id="error-message" class="hidden p-3 bg-red-50 border border-red-200 rounded-lg">
@@ -293,7 +310,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 body: JSON.stringify({ email }),
             });
 
-            const data = await response.json();
+            const text = await response.text();
+            let data;
+            try { data = JSON.parse(text); } catch(e) {
+                throw new Error('Payment service unavailable. Please try again shortly.');
+            }
 
             if (!response.ok) {
                 throw new Error(data.error || 'Something went wrong.');
