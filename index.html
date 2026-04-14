@@ -243,6 +243,327 @@
             </p>
 </div>
 </section>
+<!-- Quiz Section -->
+<section class="w-full px-6 py-24 bg-surface-variant/50" id="quiz-section">
+<div class="max-w-2xl mx-auto">
+  <div class="text-center mb-10">
+    <p class="text-xs font-black tracking-[0.25em] text-primary uppercase mb-3">FREE QUIZ</p>
+    <h2 class="text-4xl md:text-5xl font-black tracking-tight leading-[1.1] text-on-background mb-4">60 Seconds to the Clarity You've Been Looking For</h2>
+    <p class="text-lg text-slate-600 mb-2">Answer 6 simple questions. We'll show you where to start first.</p>
+    <p class="text-sm text-slate-500">You'll get all 6 Arcliva systems. This quiz shows you which one to open first.</p>
+  </div>
+
+  <div class="bg-white rounded-2xl border border-outline shadow-sm p-8 md:p-10" id="quiz-container">
+
+    <!-- Progress Bar -->
+    <div class="mb-8" id="quiz-progress-wrap">
+      <div class="flex justify-between text-xs text-slate-400 mb-2">
+        <span id="quiz-step-label">Question 1 of 6</span>
+        <span id="quiz-pct-label">0%</span>
+      </div>
+      <div class="w-full bg-slate-100 rounded-full h-2">
+        <div class="h-2 rounded-full transition-all duration-500" id="quiz-progress-bar" style="width:0%;background:linear-gradient(90deg,#2D7A6D,#52A895)"></div>
+      </div>
+    </div>
+
+    <!-- Questions -->
+    <div id="quiz-questions">
+
+      <!-- Q1 -->
+      <div class="quiz-q" data-q="1">
+        <p class="text-xl font-black text-on-background mb-6">How do you usually feel during the day?</p>
+        <div class="space-y-3">
+          <label class="quiz-opt flex items-start gap-3 p-4 rounded-xl border border-outline cursor-pointer hover:border-primary transition-colors">
+            <input type="radio" name="q1" value="tired_start" class="mt-0.5 accent-primary"> <span>I feel tired before the day even starts</span>
+          </label>
+          <label class="quiz-opt flex items-start gap-3 p-4 rounded-xl border border-outline cursor-pointer hover:border-primary transition-colors">
+            <input type="radio" name="q1" value="crash" class="mt-0.5 accent-primary"> <span>I start okay, then crash later</span>
+          </label>
+          <label class="quiz-opt flex items-start gap-3 p-4 rounded-xl border border-outline cursor-pointer hover:border-primary transition-colors">
+            <input type="radio" name="q1" value="could_better" class="mt-0.5 accent-primary"> <span>I get through the day, but I know I could feel better</span>
+          </label>
+          <label class="quiz-opt flex items-start gap-3 p-4 rounded-xl border border-outline cursor-pointer hover:border-primary transition-colors">
+            <input type="radio" name="q1" value="good" class="mt-0.5 accent-primary"> <span>I feel pretty good most days</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Q2 -->
+      <div class="quiz-q hidden" data-q="2">
+        <p class="text-xl font-black text-on-background mb-6">What does your sleep feel like right now?</p>
+        <div class="space-y-3">
+          <label class="quiz-opt flex items-start gap-3 p-4 rounded-xl border border-outline cursor-pointer hover:border-primary transition-colors">
+            <input type="radio" name="q2" value="cant_fall_asleep" class="mt-0.5 accent-primary"> <span>I have a hard time falling asleep</span>
+          </label>
+          <label class="quiz-opt flex items-start gap-3 p-4 rounded-xl border border-outline cursor-pointer hover:border-primary transition-colors">
+            <input type="radio" name="q2" value="wake_night" class="mt-0.5 accent-primary"> <span>I wake up during the night</span>
+          </label>
+          <label class="quiz-opt flex items-start gap-3 p-4 rounded-xl border border-outline cursor-pointer hover:border-primary transition-colors">
+            <input type="radio" name="q2" value="tired_morning" class="mt-0.5 accent-primary"> <span>I sleep, but still wake up tired</span>
+          </label>
+          <label class="quiz-opt flex items-start gap-3 p-4 rounded-xl border border-outline cursor-pointer hover:border-primary transition-colors">
+            <input type="radio" name="q2" value="sleep_ok" class="mt-0.5 accent-primary"> <span>Sleep is not my main issue</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Q3 -->
+      <div class="quiz-q hidden" data-q="3">
+        <p class="text-xl font-black text-on-background mb-6">Where does stress hit you the most?</p>
+        <div class="space-y-3">
+          <label class="quiz-opt flex items-start gap-3 p-4 rounded-xl border border-outline cursor-pointer hover:border-primary transition-colors">
+            <input type="radio" name="q3" value="stress_body" class="mt-0.5 accent-primary"> <span>In my body</span>
+          </label>
+          <label class="quiz-opt flex items-start gap-3 p-4 rounded-xl border border-outline cursor-pointer hover:border-primary transition-colors">
+            <input type="radio" name="q3" value="stress_focus" class="mt-0.5 accent-primary"> <span>In my focus</span>
+          </label>
+          <label class="quiz-opt flex items-start gap-3 p-4 rounded-xl border border-outline cursor-pointer hover:border-primary transition-colors">
+            <input type="radio" name="q3" value="cant_calm" class="mt-0.5 accent-primary"> <span>I have a hard time calming down</span>
+          </label>
+          <label class="quiz-opt flex items-start gap-3 p-4 rounded-xl border border-outline cursor-pointer hover:border-primary transition-colors">
+            <input type="radio" name="q3" value="stress_digestion" class="mt-0.5 accent-primary"> <span>In my digestion</span>
+          </label>
+          <label class="quiz-opt flex items-start gap-3 p-4 rounded-xl border border-outline cursor-pointer hover:border-primary transition-colors">
+            <input type="radio" name="q3" value="stress_ok" class="mt-0.5 accent-primary"> <span>Stress is not my main issue</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Q4 -->
+      <div class="quiz-q hidden" data-q="4">
+        <p class="text-xl font-black text-on-background mb-6">Which one sounds most like you?</p>
+        <div class="space-y-3">
+          <label class="quiz-opt flex items-start gap-3 p-4 rounded-xl border border-outline cursor-pointer hover:border-primary transition-colors">
+            <input type="radio" name="q4" value="dont_know_start" class="mt-0.5 accent-primary"> <span>I want to start, but I do not know where to begin</span>
+          </label>
+          <label class="quiz-opt flex items-start gap-3 p-4 rounded-xl border border-outline cursor-pointer hover:border-primary transition-colors">
+            <input type="radio" name="q4" value="dont_stick" class="mt-0.5 accent-primary"> <span>I start routines, but I do not stick with them</span>
+          </label>
+          <label class="quiz-opt flex items-start gap-3 p-4 rounded-xl border border-outline cursor-pointer hover:border-primary transition-colors">
+            <input type="radio" name="q4" value="random_supps" class="mt-0.5 accent-primary"> <span>I already take supplements, but it feels random</span>
+          </label>
+          <label class="quiz-opt flex items-start gap-3 p-4 rounded-xl border border-outline cursor-pointer hover:border-primary transition-colors">
+            <input type="radio" name="q4" value="want_system" class="mt-0.5 accent-primary"> <span>I want a clear system that makes more sense</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Q5 -->
+      <div class="quiz-q hidden" data-q="5">
+        <p class="text-xl font-black text-on-background mb-6">What do you want help with most right now?</p>
+        <div class="space-y-3">
+          <label class="quiz-opt flex items-start gap-3 p-4 rounded-xl border border-outline cursor-pointer hover:border-primary transition-colors">
+            <input type="radio" name="q5" value="sleep" class="mt-0.5 accent-primary"> <span>Better sleep</span>
+          </label>
+          <label class="quiz-opt flex items-start gap-3 p-4 rounded-xl border border-outline cursor-pointer hover:border-primary transition-colors">
+            <input type="radio" name="q5" value="energy" class="mt-0.5 accent-primary"> <span>Better energy</span>
+          </label>
+          <label class="quiz-opt flex items-start gap-3 p-4 rounded-xl border border-outline cursor-pointer hover:border-primary transition-colors">
+            <input type="radio" name="q5" value="stress" class="mt-0.5 accent-primary"> <span>Better stress support</span>
+          </label>
+          <label class="quiz-opt flex items-start gap-3 p-4 rounded-xl border border-outline cursor-pointer hover:border-primary transition-colors">
+            <input type="radio" name="q5" value="digestion" class="mt-0.5 accent-primary"> <span>Better digestion</span>
+          </label>
+          <label class="quiz-opt flex items-start gap-3 p-4 rounded-xl border border-outline cursor-pointer hover:border-primary transition-colors">
+            <input type="radio" name="q5" value="immune" class="mt-0.5 accent-primary"> <span>Better immune support</span>
+          </label>
+          <label class="quiz-opt flex items-start gap-3 p-4 rounded-xl border border-outline cursor-pointer hover:border-primary transition-colors">
+            <input type="radio" name="q5" value="all" class="mt-0.5 accent-primary"> <span>I want help with all of it</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Q6 -->
+      <div class="quiz-q hidden" data-q="6">
+        <p class="text-xl font-black text-on-background mb-6">What has stopped you before?</p>
+        <div class="space-y-3">
+          <label class="quiz-opt flex items-start gap-3 p-4 rounded-xl border border-outline cursor-pointer hover:border-primary transition-colors">
+            <input type="radio" name="q6" value="didnt_know_what" class="mt-0.5 accent-primary"> <span>I did not know what to take</span>
+          </label>
+          <label class="quiz-opt flex items-start gap-3 p-4 rounded-xl border border-outline cursor-pointer hover:border-primary transition-colors">
+            <input type="radio" name="q6" value="didnt_know_when" class="mt-0.5 accent-primary"> <span>I did not know when to take things</span>
+          </label>
+          <label class="quiz-opt flex items-start gap-3 p-4 rounded-xl border border-outline cursor-pointer hover:border-primary transition-colors">
+            <input type="radio" name="q6" value="no_system" class="mt-0.5 accent-primary"> <span>I bought supplements, but had no real system</span>
+          </label>
+          <label class="quiz-opt flex items-start gap-3 p-4 rounded-xl border border-outline cursor-pointer hover:border-primary transition-colors">
+            <input type="radio" name="q6" value="fell_off" class="mt-0.5 accent-primary"> <span>I fell off after a couple of weeks</span>
+          </label>
+          <label class="quiz-opt flex items-start gap-3 p-4 rounded-xl border border-outline cursor-pointer hover:border-primary transition-colors">
+            <input type="radio" name="q6" value="ready" class="mt-0.5 accent-primary"> <span>Nothing. I am ready to start</span>
+          </label>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Next Button -->
+    <div class="mt-8" id="quiz-next-wrap">
+      <button id="quiz-next-btn" class="w-full py-4 px-8 rounded-xl font-black text-white text-base transition-all opacity-50 cursor-not-allowed" style="background:linear-gradient(135deg,#2D7A6D 0%,#1A5C52 100%)" disabled>Next</button>
+    </div>
+
+    <!-- Email Capture -->
+    <div class="hidden" id="quiz-email-screen">
+      <div class="text-center mb-8">
+        <span class="material-symbols-outlined text-4xl text-primary mb-4 block" style='font-variation-settings:"FILL" 1'>check_circle</span>
+        <h3 class="text-2xl font-black text-on-background mb-2">Your starting point is ready</h3>
+        <p class="text-slate-500">Where should we send it?</p>
+      </div>
+      <div class="space-y-4 mb-6">
+        <input type="text" id="quiz-first-name" placeholder="First Name" class="w-full px-4 py-3 rounded-xl border border-outline text-sm focus:outline-none focus:border-primary">
+        <input type="email" id="quiz-email" placeholder="Email" class="w-full px-4 py-3 rounded-xl border border-outline text-sm focus:outline-none focus:border-primary">
+      </div>
+      <button id="quiz-submit-btn" class="w-full py-4 px-8 rounded-xl font-black text-white text-base transition-all" style="background:linear-gradient(135deg,#2D7A6D 0%,#1A5C52 100%)">Show Me My Starting Point</button>
+    </div>
+
+    <!-- Result Screen -->
+    <div class="hidden" id="quiz-result-screen">
+      <div class="text-center mb-8">
+        <span class="material-symbols-outlined text-5xl text-primary mb-4 block" style='font-variation-settings:"FILL" 1'>emoji_events</span>
+        <p class="text-xs font-black tracking-[0.25em] text-primary uppercase mb-2">YOUR RESULT</p>
+        <h3 class="text-3xl font-black text-on-background mb-2" id="result-headline"></h3>
+        <p class="text-slate-500 mb-6" id="result-subheadline">Based on your answers, this is your best place to start.</p>
+        <p id="result-body" class="text-slate-600 text-sm leading-relaxed mb-6"></p>
+        <p class="text-sm text-slate-500 italic mb-8">When you join Arcliva, you get all 6 systems. This is just the one to open first.</p>
+      </div>
+      <a href="ecosystem.html" class="block w-full py-4 px-8 rounded-xl font-black text-white text-base text-center transition-all mb-4" style="background:linear-gradient(135deg,#2D7A6D 0%,#1A5C52 100%)">Get All 6 Systems — $147 | One-Time Purchase | Lifetime Access</a>
+      <p class="text-xs text-center text-slate-400 leading-relaxed">Includes The Ecosystem, Sleep Architecture, Fatigue Fix, Stress Defense, Digestive Restoration, Immune Strength, smart Shopping Lists, Audio Playbacks, and Arcliva Clarity™ — your 24/7 AI general wellness assistant.</p>
+      <div class="mt-8 pt-6 border-t border-outline">
+        <p class="text-[10px] text-center text-slate-400 leading-relaxed">Educational use only. Not medical advice. Not intended to diagnose, treat, cure, or prevent any disease. Results may vary. Supplements not included. Affiliate disclosure where applicable.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<script>
+(function(){
+  const questions = document.querySelectorAll('.quiz-q');
+  const nextBtn = document.getElementById('quiz-next-btn');
+  const nextWrap = document.getElementById('quiz-next-wrap');
+  const progressBar = document.getElementById('quiz-progress-bar');
+  const stepLabel = document.getElementById('quiz-step-label');
+  const pctLabel = document.getElementById('quiz-pct-label');
+  const emailScreen = document.getElementById('quiz-email-screen');
+  const resultScreen = document.getElementById('quiz-result-screen');
+  const questionsWrap = document.getElementById('quiz-questions');
+  const progressWrap = document.getElementById('quiz-progress-wrap');
+  let current = 0;
+  const answers = {};
+
+  function updateProgress(step, total) {
+    const pct = Math.round((step / total) * 100);
+    progressBar.style.width = pct + '%';
+    stepLabel.textContent = step < total ? 'Question ' + (step + 1) + ' of ' + total : 'Almost done';
+    pctLabel.textContent = pct + '%';
+  }
+
+  function showQ(index) {
+    questions.forEach((q, i) => q.classList.toggle('hidden', i !== index));
+    const radios = questions[index].querySelectorAll('input[type=radio]');
+    const name = radios[0].name;
+    const anyChecked = [...radios].some(r => r.checked);
+    nextBtn.disabled = !anyChecked;
+    nextBtn.classList.toggle('opacity-50', !anyChecked);
+    nextBtn.classList.toggle('cursor-not-allowed', !anyChecked);
+    nextBtn.textContent = index === questions.length - 1 ? 'See My Result' : 'Next';
+    updateProgress(index, questions.length);
+  }
+
+  questions.forEach(q => {
+    q.querySelectorAll('input[type=radio]').forEach(radio => {
+      radio.addEventListener('change', () => {
+        nextBtn.disabled = false;
+        nextBtn.classList.remove('opacity-50','cursor-not-allowed');
+        q.querySelectorAll('.quiz-opt').forEach(opt => opt.classList.remove('border-primary','bg-primary/5'));
+        radio.closest('.quiz-opt').classList.add('border-primary','bg-primary/5');
+      });
+    });
+  });
+
+  nextBtn.addEventListener('click', () => {
+    const q = questions[current];
+    const checked = q.querySelector('input[type=radio]:checked');
+    if (!checked) return;
+    answers['q' + (current + 1)] = checked.value;
+    current++;
+    if (current < questions.length) {
+      showQ(current);
+    } else {
+      questionsWrap.classList.add('hidden');
+      nextWrap.classList.add('hidden');
+      progressWrap.classList.add('hidden');
+      emailScreen.classList.remove('hidden');
+    }
+  });
+
+  document.getElementById('quiz-submit-btn').addEventListener('click', () => {
+    const name = document.getElementById('quiz-first-name').value.trim();
+    const email = document.getElementById('quiz-email').value.trim();
+    if (!email) { alert('Please enter your email.'); return; }
+    const result = getResult(answers);
+    emailScreen.classList.add('hidden');
+    resultScreen.classList.remove('hidden');
+    document.getElementById('result-headline').textContent = result.headline;
+    document.getElementById('result-body').textContent = result.body;
+  });
+
+  function getResult(a) {
+    const results = {
+      ecosystem: {
+        headline: 'Start With The Ecosystem',
+        body: 'Your answers point to more than one area, which means you need a clearer place to start. That is exactly what The Ecosystem is for. The Ecosystem is the complete Arcliva foundation. It brings sleep, energy, stress, digestion, and immune support into one clear daily system so you know what to take, when to take it, and why it matters.'
+      },
+      sleep: {
+        headline: 'Start With Sleep Architecture',
+        body: 'Your answers point to sleep as the first place to start. When sleep feels off, everything else feels harder the next day. Sleep Architecture gives you a clear evening and night routine so you know what to take, when to take it, and why it matters. It is built to help you stop guessing and follow a system that feels easier to stay with.'
+      },
+      energy: {
+        headline: 'Start With Fatigue Fix',
+        body: 'Your answers point to energy as the first place to start. You may be getting through the day, but your routine is not giving you the support it should. Fatigue Fix gives you a clearer morning routine built around steady daily support. It helps you stop doing things randomly and gives you a system you can actually follow.'
+      },
+      stress: {
+        headline: 'Start With Stress Defense',
+        body: 'Your answers point to stress as the first place to start. When stress stays high, it can make the whole day feel harder to manage. Stress Defense gives you a clear system for daily stress support. It helps you organize what to take and when, so your routine feels calmer, simpler, and easier to stay on track with.'
+      },
+      digestion: {
+        headline: 'Start With Digestive Restoration',
+        body: 'Your answers point to digestion as the first place to start. When digestion feels off, it can make your whole routine feel harder to trust. Digestive Restoration gives you a clear system for digestive support. It helps you organize your routine so you know what to take, when to take it, and how it fits together.'
+      },
+      immune: {
+        headline: 'Start With Immune Strength',
+        body: 'Your answers point to immune support as the first place to start. A better routine starts with clear daily support you can follow with confidence. Immune Strength gives you a simple system for daily immune support. It helps you build a clearer routine with the right structure from the start.'
+      }
+    };
+
+    // "All of it" answer on Q5 → Ecosystem
+    if (a.q5 === 'all') return results.ecosystem;
+
+    // Beginner / overwhelmed → Ecosystem
+    if (a.q4 === 'dont_know_start') return results.ecosystem;
+
+    // Q5 is the primary signal
+    if (a.q5 === 'sleep') return results.sleep;
+    if (a.q5 === 'energy') return results.energy;
+    if (a.q5 === 'stress') return results.stress;
+    if (a.q5 === 'digestion') return results.digestion;
+    if (a.q5 === 'immune') return results.immune;
+
+    // Fallback on Q1/Q2/Q3 signals
+    if (a.q2 === 'cant_fall_asleep' || a.q2 === 'wake_night' || a.q2 === 'tired_morning') return results.sleep;
+    if (a.q1 === 'tired_start' || a.q1 === 'crash') return results.energy;
+    if (a.q3 === 'cant_calm' || a.q3 === 'stress_body' || a.q3 === 'stress_focus') return results.stress;
+    if (a.q3 === 'stress_digestion') return results.digestion;
+
+    // Default → Ecosystem
+    return results.ecosystem;
+  }
+
+  showQ(0);
+})();
+</script>
+
 <!-- Guarantee Section -->
 <section class="w-full px-6 pb-32">
 <div class="max-w-4xl mx-auto bg-white p-12 rounded-lg text-center border border-outline clinical-glow">
