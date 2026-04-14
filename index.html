@@ -64,8 +64,8 @@
 <body class="overflow-x-hidden selection:bg-primary selection:text-on-primary antialiased" data-mode="connect">
 <!-- Top Navigation -->
 <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-[#E5E7EB] shadow-sm">
-<div class="flex justify-between items-center h-20 px-6 md:px-12 max-w-screen-2xl mx-auto">
-<div class="text-2xl font-black tracking-tight text-[#1A1A1A] flex items-center gap-2">
+<div class="relative flex justify-between items-center h-20 px-6 md:px-12 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-black tracking-tight text-[#1A1A1A] flex items-center gap-2 md:static absolute left-1/2 -translate-x-1/2 md:translate-x-0 md:left-auto">
 <a href="index.html"><img alt="ARCLIVA Logo" class="h-8 w-auto object-contain" src="assets/img3.jpg"></a>
 </div>
 <div class="hidden md:flex items-center gap-8">
@@ -173,7 +173,7 @@
 </div>
 
 <!-- 5 Individual System Cards -->
-<div class="grid grid-cols-2 md:grid-cols-5 gap-6">
+<div class="grid grid-cols-2 md:grid-cols-5 gap-6 [&>*:last-child:nth-child(odd)]:col-span-2 [&>*:last-child:nth-child(odd)]:mx-auto [&>*:last-child:nth-child(odd)]:w-1/2">
 <a href="systems.html" class="bg-white p-8 rounded-lg border border-outline flex flex-col items-center text-center space-y-4 hover:border-primary/30 transition-all hover:shadow-md group">
 <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
 <span class="material-symbols-outlined" data-icon="bedtime">bedtime</span>
