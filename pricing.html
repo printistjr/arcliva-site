@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pricing | ARCLIVA Wellness Systems</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+                colors: {
+                    "on-error": "#ffffff",
+                    "primary": "#056155",
+                    "on-primary": "#ffffff",
+                    "background": "#f8f9fa",
+                    "surface": "#f8f9fa",
+                    "surface-bright": "#f8f9fa",
+                    "on-surface": "#191c1d",
+                    "on-background": "#191c1d",
+                    "outline": "#6f7976",
+                    "arcliva-teal": "#2D7A6D",
+                    "arcliva-emerald": "#1A5C52",
+                    "arcliva-accent": "#52A895",
+                    "charcoal": "#1A1A1A"
+                },
+                fontFamily: {
+                    "headline": ["Inter", "sans-serif"],
+                    "body": ["Inter", "sans-serif"],
+                    "label": ["Inter", "sans-serif"]
+                },
+                borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+            },
+        },
+    }
+</script>
+<style>
+    body { font-family: 'Inter', sans-serif; background-color: #F8F9FA; color: #1A1A1A; }
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    .teal-gradient { background: linear-gradient(135deg, #2D7A6D 0%, #1A5C52 100%); }
+    .plan-card { transition: box-shadow 0.2s, transform 0.2s; }
+    .plan-card:hover { transform: translateY(-4px); }
+    .plan-card.featured { box-shadow: 0 0 0 2px #2D7A6D, 0 20px 40px rgba(45,122,109,0.15); }
+</style>
+</head>
+<body class="bg-surface-bright text-charcoal">
+
+<!-- Top Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-[#E5E7EB] shadow-sm">
+<div class="flex justify-between items-center h-20 px-6 md:px-12 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-black tracking-tight text-[#1A1A1A] flex items-center gap-2">
+<a href="index.html"><img alt="ARCLIVA Logo" class="h-8 w-auto object-contain" src="assets/img3.jpg"></a>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-[#6B7280] hover:text-[#2D7A6D] transition-colors font-['Inter'] font-medium text-sm antialiased" href="index.html">Home</a>
+<a class="text-[#6B7280] hover:text-[#2D7A6D] transition-colors font-['Inter'] font-medium text-sm antialiased" href="ecosystem.html">Ecosystem</a>
+<a class="text-[#6B7280] hover:text-[#2D7A6D] transition-colors font-['Inter'] font-medium text-sm antialiased" href="systems.html">Systems</a>
+<a class="text-[#2D7A6D] border-b-2 border-[#52A895] pb-1 font-['Inter'] font-medium text-sm antialiased" href="pricing.html">Pricing</a>
+<a class="text-[#6B7280] hover:text-[#2D7A6D] transition-colors font-['Inter'] font-medium text-sm antialiased" href="about.html">About Us</a>
+</div>
+<a href="checkout.html" class="hidden md:inline-block bg-[#2D7A6D] text-white px-6 py-2.5 rounded-md font-['Inter'] font-medium text-sm antialiased active:scale-95 duration-200 shadow-sm hover:opacity-90">Get Access</a>
+<button id="mobile-menu-btn" class="md:hidden flex items-center justify-center w-10 h-10 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu">
+<span class="material-symbols-outlined text-[#1A1A1A] text-[28px]">menu</span>
+</button>
+</div>
+<div id="mobile-menu" class="hidden md:hidden bg-white border-t border-[#E5E7EB] px-6 pb-6">
+<div class="flex flex-col pt-2">
+<a class="block text-[#6B7280] hover:text-[#2D7A6D] transition-colors text-base py-3 border-b border-[#E5E7EB]" href="index.html">Home</a>
+<a class="block text-[#6B7280] hover:text-[#2D7A6D] transition-colors text-base py-3 border-b border-[#E5E7EB]" href="ecosystem.html">Ecosystem</a>
+<a class="block text-[#6B7280] hover:text-[#2D7A6D] transition-colors text-base py-3 border-b border-[#E5E7EB]" href="systems.html">Systems</a>
+<a class="block text-[#2D7A6D] font-semibold text-base py-3 border-b border-[#E5E7EB]" href="pricing.html">Pricing</a>
+<a class="block text-[#6B7280] hover:text-[#2D7A6D] transition-colors text-base py-3 border-b border-[#E5E7EB]" href="about.html">About Us</a>
+<div class="pt-5">
+<a href="checkout.html" class="block bg-[#2D7A6D] text-white text-center py-3.5 rounded-md font-['Inter'] font-semibold text-sm active:scale-95 duration-200 shadow-sm hover:opacity-90">Get Access</a>
+</div>
+</div>
+</div>
+</nav>
+<script>
+(function(){var btn=document.getElementById('mobile-menu-btn');var menu=document.getElementById('mobile-menu');if(btn&&menu){btn.addEventListener('click',function(){menu.classList.toggle('hidden');var icon=btn.querySelector('.material-symbols-outlined');icon.textContent=menu.classList.contains('hidden')?'menu':'close';});}})();
+</script>
+
+<main class="max-w-6xl mx-auto px-6 pt-32 pb-20">
+
+  <!-- Header -->
+  <header class="text-center mb-4">
+    <p class="text-xs font-black tracking-[0.25em] text-arcliva-teal uppercase mb-3">SIMPLE PRICING</p>
+    <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-charcoal mb-4">Choose Your Plan</h1>
+    <p class="text-lg text-gray-500 max-w-xl mx-auto">Every plan includes everything — all 6 systems, Arcliva Clarity™ AI, smart shopping lists, and lifetime updates to content.</p>
+  </header>
+
+  <!-- Toggle (visual only, decorative) -->
+  <div class="flex justify-center mb-12 mt-8">
+    <div class="inline-flex items-center gap-2 bg-white border border-gray-200 rounded-full px-5 py-2 shadow-sm text-sm text-gray-500 font-medium">
+      <span class="material-symbols-outlined text-arcliva-teal text-base" style='font-variation-settings:"FILL" 1'>check_circle</span>
+      All plans include every feature. No add-ons. No paywalls inside.
+    </div>
+  </div>
+
+  <!-- Pricing Cards -->
+  <div class="grid md:grid-cols-3 gap-6 items-stretch">
+
+    <!-- Monthly -->
+    <div class="plan-card bg-white border border-gray-200 rounded-2xl p-8 flex flex-col shadow-sm">
+      <div class="mb-6">
+        <p class="text-xs font-black tracking-[0.2em] text-gray-400 uppercase mb-2">Monthly</p>
+        <div class="flex items-end gap-1 mb-1">
+          <span class="text-5xl font-black text-charcoal">$14.99</span>
+          <span class="text-gray-400 font-medium mb-1.5">/month</span>
+        </div>
+        <p class="text-sm text-gray-500">Billed monthly. Cancel anytime.</p>
+      </div>
+
+      <ul class="space-y-3 mb-8 flex-1">
+        <li class="flex items-start gap-3 text-sm text-gray-700">
+          <span class="material-symbols-outlined text-arcliva-teal text-base mt-0.5" style='font-variation-settings:"FILL" 1'>check_circle</span>
+          All 6 wellness systems
+        </li>
+        <li class="flex items-start gap-3 text-sm text-gray-700">
+          <span class="material-symbols-outlined text-arcliva-teal text-base mt-0.5" style='font-variation-settings:"FILL" 1'>check_circle</span>
+          Arcliva Clarity™ AI assistant
+        </li>
+        <li class="flex items-start gap-3 text-sm text-gray-700">
+          <span class="material-symbols-outlined text-arcliva-teal text-base mt-0.5" style='font-variation-settings:"FILL" 1'>check_circle</span>
+          Smart supplement shopping lists
+        </li>
+        <li class="flex items-start gap-3 text-sm text-gray-700">
+          <span class="material-symbols-outlined text-arcliva-teal text-base mt-0.5" style='font-variation-settings:"FILL" 1'>check_circle</span>
+          Daily routine guides & audio
+        </li>
+        <li class="flex items-start gap-3 text-sm text-gray-700">
+          <span class="material-symbols-outlined text-arcliva-teal text-base mt-0.5" style='font-variation-settings:"FILL" 1'>check_circle</span>
+          Content updates included
+        </li>
+      </ul>
+
+      <a href="checkout.html?plan=monthly" class="block w-full text-center border-2 border-arcliva-teal text-arcliva-teal font-bold rounded-xl py-3.5 text-sm tracking-wide hover:bg-arcliva-teal hover:text-white transition-all active:scale-[0.98]">
+        Start Monthly
+      </a>
+    </div>
+
+    <!-- Annual — Featured -->
+    <div class="plan-card featured bg-white border-2 border-arcliva-teal rounded-2xl p-8 flex flex-col relative">
+      <!-- Most Popular badge -->
+      <div class="absolute -top-4 left-1/2 -translate-x-1/2">
+        <span class="teal-gradient text-white text-[10px] font-black tracking-[0.2em] uppercase px-4 py-1.5 rounded-full shadow-md whitespace-nowrap">Most Popular</span>
+      </div>
+
+      <div class="mb-6 mt-2">
+        <p class="text-xs font-black tracking-[0.2em] text-gray-400 uppercase mb-2">Annual</p>
+        <div class="flex items-end gap-1 mb-1">
+          <span class="text-5xl font-black text-charcoal">$99.99</span>
+          <span class="text-gray-400 font-medium mb-1.5">/year</span>
+        </div>
+        <div class="flex items-center gap-2 mb-1">
+          <span class="bg-arcliva-teal/10 text-arcliva-teal text-xs font-black tracking-wider px-2.5 py-1 rounded-full">Save 44%</span>
+          <span class="text-sm text-gray-400 line-through">$179.88/yr</span>
+        </div>
+        <p class="text-sm text-gray-500">Just $8.33/month, billed annually.</p>
+      </div>
+
+      <!-- Why Annual callout -->
+      <div class="bg-arcliva-teal/5 border border-arcliva-teal/20 rounded-xl p-4 mb-6 text-sm text-arcliva-emerald leading-relaxed">
+        <strong class="font-bold block mb-1">Why annual makes sense:</strong>
+        You're going to use this more than one month. At $8.33/month you save $80 a year compared to paying monthly — that's almost two months free. Most members stay with Arcliva well beyond a year. Lock in the better rate now.
+      </div>
+
+      <ul class="space-y-3 mb-8 flex-1">
+        <li class="flex items-start gap-3 text-sm text-gray-700">
+          <span class="material-symbols-outlined text-arcliva-teal text-base mt-0.5" style='font-variation-settings:"FILL" 1'>check_circle</span>
+          All 6 wellness systems
+        </li>
+        <li class="flex items-start gap-3 text-sm text-gray-700">
+          <span class="material-symbols-outlined text-arcliva-teal text-base mt-0.5" style='font-variation-settings:"FILL" 1'>check_circle</span>
+          Arcliva Clarity™ AI assistant
+        </li>
+        <li class="flex items-start gap-3 text-sm text-gray-700">
+          <span class="material-symbols-outlined text-arcliva-teal text-base mt-0.5" style='font-variation-settings:"FILL" 1'>check_circle</span>
+          Smart supplement shopping lists
+        </li>
+        <li class="flex items-start gap-3 text-sm text-gray-700">
+          <span class="material-symbols-outlined text-arcliva-teal text-base mt-0.5" style='font-variation-settings:"FILL" 1'>check_circle</span>
+          Daily routine guides & audio
+        </li>
+        <li class="flex items-start gap-3 text-sm text-gray-700">
+          <span class="material-symbols-outlined text-arcliva-teal text-base mt-0.5" style='font-variation-settings:"FILL" 1'>check_circle</span>
+          Content updates included
+        </li>
+        <li class="flex items-start gap-3 text-sm font-semibold text-arcliva-emerald">
+          <span class="material-symbols-outlined text-arcliva-teal text-base mt-0.5" style='font-variation-settings:"FILL" 1'>savings</span>
+          ~2 months free vs. monthly
+        </li>
+      </ul>
+
+      <a href="checkout.html?plan=annual" class="block w-full text-center teal-gradient text-white font-bold rounded-xl py-3.5 text-sm tracking-wide shadow-lg shadow-arcliva-teal/20 hover:opacity-90 transition-all active:scale-[0.98]">
+        Start Annual — Save 44%
+      </a>
+    </div>
+
+    <!-- Lifetime -->
+    <div class="plan-card bg-white border border-gray-200 rounded-2xl p-8 flex flex-col shadow-sm relative">
+      <!-- Best Value badge -->
+      <div class="absolute -top-4 left-1/2 -translate-x-1/2">
+        <span class="bg-charcoal text-white text-[10px] font-black tracking-[0.2em] uppercase px-4 py-1.5 rounded-full shadow-md whitespace-nowrap">Best Value</span>
+      </div>
+
+      <div class="mb-6 mt-2">
+        <p class="text-xs font-black tracking-[0.2em] text-gray-400 uppercase mb-2">Lifetime</p>
+        <div class="flex items-end gap-1 mb-1">
+          <span class="text-5xl font-black text-charcoal">$147</span>
+          <span class="text-gray-400 font-medium mb-1.5"> one-time</span>
+        </div>
+        <p class="text-sm text-gray-500">Pay once. Access forever.</p>
+      </div>
+
+      <!-- Why Lifetime callout -->
+      <div class="bg-gray-50 border border-gray-200 rounded-xl p-4 mb-6 text-sm text-gray-700 leading-relaxed">
+        <strong class="font-bold text-charcoal block mb-1">Why lifetime is the move:</strong>
+        It's only $47 more than a year of annual. For that, you own it permanently — every update, every new system, every AI improvement. If you're serious about building a real routine, lifetime pays for itself in 15 months and then it's just yours.
+      </div>
+
+      <ul class="space-y-3 mb-8 flex-1">
+        <li class="flex items-start gap-3 text-sm text-gray-700">
+          <span class="material-symbols-outlined text-arcliva-teal text-base mt-0.5" style='font-variation-settings:"FILL" 1'>check_circle</span>
+          All 6 wellness systems
+        </li>
+        <li class="flex items-start gap-3 text-sm text-gray-700">
+          <span class="material-symbols-outlined text-arcliva-teal text-base mt-0.5" style='font-variation-settings:"FILL" 1'>check_circle</span>
+          Arcliva Clarity™ AI assistant
+        </li>
+        <li class="flex items-start gap-3 text-sm text-gray-700">
+          <span class="material-symbols-outlined text-arcliva-teal text-base mt-0.5" style='font-variation-settings:"FILL" 1'>check_circle</span>
+          Smart supplement shopping lists
+        </li>
+        <li class="flex items-start gap-3 text-sm text-gray-700">
+          <span class="material-symbols-outlined text-arcliva-teal text-base mt-0.5" style='font-variation-settings:"FILL" 1'>check_circle</span>
+          Daily routine guides & audio
+        </li>
+        <li class="flex items-start gap-3 text-sm text-gray-700">
+          <span class="material-symbols-outlined text-arcliva-teal text-base mt-0.5" style='font-variation-settings:"FILL" 1'>check_circle</span>
+          All future content updates
+        </li>
+        <li class="flex items-start gap-3 text-sm font-semibold text-charcoal">
+          <span class="material-symbols-outlined text-charcoal text-base mt-0.5" style='font-variation-settings:"FILL" 1'>all_inclusive</span>
+          No renewals. Ever.
+        </li>
+      </ul>
+
+      <a href="checkout.html?plan=lifetime" class="block w-full text-center bg-charcoal text-white font-bold rounded-xl py-3.5 text-sm tracking-wide hover:bg-gray-800 transition-all active:scale-[0.98] shadow-lg">
+        Get Lifetime Access
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Guarantee strip -->
+  <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-6 text-sm text-gray-500">
+    <div class="flex items-center gap-2">
+      <span class="material-symbols-outlined text-arcliva-teal text-xl" style='font-variation-settings:"FILL" 1'>verified_user</span>
+      7-Day Clarity Guarantee
+    </div>
+    <div class="hidden sm:block w-px h-4 bg-gray-200"></div>
+    <div class="flex items-center gap-2">
+      <span class="material-symbols-outlined text-arcliva-teal text-xl" style='font-variation-settings:"FILL" 1'>lock</span>
+      Secure checkout via Stripe
+    </div>
+    <div class="hidden sm:block w-px h-4 bg-gray-200"></div>
+    <div class="flex items-center gap-2">
+      <span class="material-symbols-outlined text-arcliva-teal text-xl" style='font-variation-settings:"FILL" 1'>bolt</span>
+      Instant access after payment
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div class="mt-20 max-w-2xl mx-auto">
+    <h2 class="text-2xl font-extrabold text-charcoal text-center mb-8 tracking-tight">Common Questions</h2>
+    <div class="space-y-4">
+
+      <details class="bg-white border border-gray-200 rounded-xl p-5 group">
+        <summary class="flex items-center justify-between cursor-pointer text-sm font-bold text-charcoal select-none">
+          Is there a free trial?
+          <span class="material-symbols-outlined text-gray-400 transition-transform group-open:rotate-180 text-xl">expand_more</span>
+        </summary>
+        <p class="mt-3 text-sm text-gray-600 leading-relaxed">We don't offer a free trial, but every plan is backed by the 7-Day Clarity Guarantee. If you don't get clarity on what to take, when to take it, and why it matters within 7 days, request a full refund — no questions asked.</p>
+      </details>
+
+      <details class="bg-white border border-gray-200 rounded-xl p-5 group">
+        <summary class="flex items-center justify-between cursor-pointer text-sm font-bold text-charcoal select-none">
+          Can I upgrade from monthly to lifetime later?
+          <span class="material-symbols-outlined text-gray-400 transition-transform group-open:rotate-180 text-xl">expand_more</span>
+        </summary>
+        <p class="mt-3 text-sm text-gray-600 leading-relaxed">Yes. You can upgrade at any time. Just reach out and we'll apply a prorated credit toward lifetime access based on how long you've been a monthly or annual member.</p>
+      </details>
+
+      <details class="bg-white border border-gray-200 rounded-xl p-5 group">
+        <summary class="flex items-center justify-between cursor-pointer text-sm font-bold text-charcoal select-none">
+          What happens when I cancel monthly or annual?
+          <span class="material-symbols-outlined text-gray-400 transition-transform group-open:rotate-180 text-xl">expand_more</span>
+        </summary>
+        <p class="mt-3 text-sm text-gray-600 leading-relaxed">Your access continues through the end of your current billing period. After that, you lose access to the app. Your data is retained for 90 days if you ever want to reactivate.</p>
+      </details>
+
+      <details class="bg-white border border-gray-200 rounded-xl p-5 group">
+        <summary class="flex items-center justify-between cursor-pointer text-sm font-bold text-charcoal select-none">
+          Do I need to buy supplements separately?
+          <span class="material-symbols-outlined text-gray-400 transition-transform group-open:rotate-180 text-xl">expand_more</span>
+        </summary>
+        <p class="mt-3 text-sm text-gray-600 leading-relaxed">Yes. Arcliva is a digital program — supplement protocols, routines, guidance, and the AI assistant. The supplements themselves are purchased separately. We provide smart shopping lists with direct links to help you find and compare them.</p>
+      </details>
+
+      <details class="bg-white border border-gray-200 rounded-xl p-5 group">
+        <summary class="flex items-center justify-between cursor-pointer text-sm font-bold text-charcoal select-none">
+          What does "lifetime" mean exactly?
+          <span class="material-symbols-outlined text-gray-400 transition-transform group-open:rotate-180 text-xl">expand_more</span>
+        </summary>
+        <p class="mt-3 text-sm text-gray-600 leading-relaxed">Lifetime means access for as long as Arcliva exists as a product — including all content updates, new system additions, and AI improvements. One payment, no further charges, no renewals.</p>
+      </details>
+
+    </div>
+  </div>
+
+  <!-- Bottom CTA -->
+  <div class="mt-20 teal-gradient rounded-2xl p-10 md:p-14 text-center">
+    <p class="text-xs font-black tracking-[0.25em] text-white/60 uppercase mb-3">Ready?</p>
+    <h2 class="text-3xl md:text-4xl font-extrabold text-white tracking-tight mb-4">Stop guessing. Start with a system.</h2>
+    <p class="text-white/80 text-lg mb-8 max-w-lg mx-auto">Every plan includes every feature. Pick the one that fits and get access in minutes.</p>
+    <a href="checkout.html?plan=lifetime" class="inline-block bg-white text-arcliva-emerald font-black text-sm tracking-widest uppercase px-10 py-4 rounded-xl hover:bg-white/90 transition-all active:scale-95 shadow-xl">
+      Get Lifetime Access — $147
+    </a>
+    <p class="text-white/50 text-xs mt-4">Or <a href="checkout.html?plan=annual" class="underline hover:text-white">start annual at $99.99/year</a> · <a href="checkout.html?plan=monthly" class="underline hover:text-white">monthly at $14.99/mo</a></p>
+  </div>
+
+</main>
+
+<!-- Footer -->
+<footer class="w-full py-8 flex flex-col md:flex-row justify-between items-center gap-4 bg-[#F8F9FA] border-t border-gray-200">
+<div class="max-w-screen-2xl mx-auto w-full flex flex-col md:flex-row justify-between items-center gap-4 px-6 md:px-12">
+<p class="font-['Inter'] text-xs text-gray-500">© 2026 Arcliva Wellness Systems. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="font-['Inter'] text-xs text-gray-500 hover:text-[#2D7A6D] transition-colors" href="privacy.html">Privacy Policy</a>
+<a class="font-['Inter'] text-xs text-gray-500 hover:text-[#2D7A6D] transition-colors" href="terms.html">Terms of Service</a>
+<a class="font-['Inter'] text-xs text-gray-500 hover:text-[#2D7A6D] transition-colors" href="compliance.html">Compliance</a>
+</div>
+</div>
+</footer>
+
+</body>
+</html>

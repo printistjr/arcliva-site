@@ -101,6 +101,7 @@
 <a class="text-[#6B7280] hover:text-[#2D7A6D] transition-colors font-['Inter'] font-medium text-sm antialiased" href="index.html">Home</a>
 <a class="text-[#6B7280] hover:text-[#2D7A6D] transition-colors font-['Inter'] font-medium text-sm antialiased" href="ecosystem.html">Ecosystem</a>
 <a class="text-[#6B7280] hover:text-[#2D7A6D] transition-colors font-['Inter'] font-medium text-sm antialiased" href="systems.html">Systems</a>
+<a class="text-[#6B7280] hover:text-[#2D7A6D] transition-colors font-['Inter'] font-medium text-sm antialiased" href="pricing.html">Pricing</a>
 <a class="text-[#6B7280] hover:text-[#2D7A6D] transition-colors font-['Inter'] font-medium text-sm antialiased" href="about.html">About Us</a>
 </div>
 <a href="checkout.html" class="hidden md:inline-block bg-[#2D7A6D] text-white px-6 py-2.5 rounded-md font-['Inter'] font-medium text-sm antialiased active:scale-95 duration-200 shadow-sm hover:opacity-90">Get Access</a>
@@ -113,6 +114,7 @@
 <a class="block text-[#6B7280] hover:text-[#2D7A6D] transition-colors text-base py-3 border-b border-[#E5E7EB]" href="index.html">Home</a>
 <a class="block text-[#6B7280] hover:text-[#2D7A6D] transition-colors text-base py-3 border-b border-[#E5E7EB]" href="ecosystem.html">Ecosystem</a>
 <a class="block text-[#6B7280] hover:text-[#2D7A6D] transition-colors text-base py-3 border-b border-[#E5E7EB]" href="systems.html">Systems</a>
+<a class="block text-[#6B7280] hover:text-[#2D7A6D] transition-colors text-base py-3 border-b border-[#E5E7EB]" href="pricing.html">Pricing</a>
 <a class="block text-[#6B7280] hover:text-[#2D7A6D] transition-colors text-base py-3 border-b border-[#E5E7EB]" href="about.html">About Us</a>
 <div class="pt-5">
 <a href="checkout.html" class="block bg-[#2D7A6D] text-white text-center py-3.5 rounded-md font-['Inter'] font-semibold text-sm active:scale-95 duration-200 shadow-sm hover:opacity-90">Get Access</a>
@@ -126,10 +128,42 @@
 
 <main class="max-w-4xl mx-auto px-6 pt-32 pb-12 md:pb-20">
 <!-- Header Section -->
-<header class="text-center mb-12">
-<h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-2 text-charcoal" style="">The Ecosystem</h1>
-<p class="text-lg text-gray-500 font-medium" style="">Premium Wellness Program</p>
+<header class="text-center mb-10">
+<h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-2 text-charcoal">Complete Your Order</h1>
+<p class="text-lg text-gray-500 font-medium">Arcliva Wellness Systems</p>
 </header>
+
+<!-- Plan Selector -->
+<div class="mb-10">
+  <p class="text-xs font-bold text-gray-400 uppercase tracking-widest text-center mb-4">Select your plan</p>
+  <div class="grid sm:grid-cols-3 gap-3" id="plan-selector">
+
+    <button data-plan="monthly" data-label="Monthly" data-price="$14.99" data-billing="/month" data-badge="" data-amount="14.99"
+      class="plan-btn text-left rounded-xl border-2 border-gray-200 p-4 transition-all hover:border-arcliva-teal focus:outline-none">
+      <p class="text-xs font-black text-gray-400 uppercase tracking-widest mb-1">Monthly</p>
+      <p class="text-2xl font-black text-charcoal">$14.99<span class="text-sm font-medium text-gray-400">/mo</span></p>
+      <p class="text-xs text-gray-400 mt-0.5">Billed monthly</p>
+    </button>
+
+    <button data-plan="annual" data-label="Annual" data-price="$99.99" data-billing="/year" data-badge="Save 44%" data-amount="99.99"
+      class="plan-btn text-left rounded-xl border-2 border-gray-200 p-4 transition-all hover:border-arcliva-teal focus:outline-none relative">
+      <span class="absolute -top-3 left-3 bg-arcliva-teal text-white text-[9px] font-black tracking-widest uppercase px-2 py-0.5 rounded-full">Save 44%</span>
+      <p class="text-xs font-black text-gray-400 uppercase tracking-widest mb-1">Annual</p>
+      <p class="text-2xl font-black text-charcoal">$99.99<span class="text-sm font-medium text-gray-400">/yr</span></p>
+      <p class="text-xs text-gray-400 mt-0.5">~$8.33/month</p>
+    </button>
+
+    <button data-plan="lifetime" data-label="Lifetime" data-price="$147" data-billing=" one-time" data-badge="Best Value" data-amount="147.00"
+      class="plan-btn text-left rounded-xl border-2 border-gray-200 p-4 transition-all hover:border-arcliva-teal focus:outline-none relative">
+      <span class="absolute -top-3 left-3 bg-charcoal text-white text-[9px] font-black tracking-widest uppercase px-2 py-0.5 rounded-full">Best Value</span>
+      <p class="text-xs font-black text-gray-400 uppercase tracking-widest mb-1">Lifetime</p>
+      <p class="text-2xl font-black text-charcoal">$147<span class="text-sm font-medium text-gray-400"> once</span></p>
+      <p class="text-xs text-gray-400 mt-0.5">Pay once, own forever</p>
+    </button>
+
+  </div>
+</div>
+
 <div class="grid md:grid-cols-2 gap-12 items-start">
 <!-- Left Column: Order Details & Summary -->
 <div class="space-y-8">
@@ -138,53 +172,57 @@
 <div class="absolute -top-12 -right-12 w-48 h-48 bg-white/10 rounded-full blur-3xl group-hover:bg-white/20 transition-all"></div>
 <div class="relative z-10">
 <div class="flex justify-between items-start mb-6">
-<span class="bg-white/20 text-white text-[10px] font-bold tracking-widest px-2 py-1 rounded uppercase" style="">One-Time Payment</span>
-<span class="material-symbols-outlined text-white/60" style="">account_balance_wallet</span>
+<span id="order-badge" class="bg-white/20 text-white text-[10px] font-bold tracking-widest px-2 py-1 rounded uppercase">One-Time Payment</span>
+<span class="material-symbols-outlined text-white/60">account_balance_wallet</span>
 </div>
-<p class="text-sm text-white/80 font-medium mb-1 uppercase tracking-wider" style="">Total Amount</p>
-<h2 class="text-5xl font-black tracking-tight mb-4" style="">$147.00</h2>
+<p class="text-sm text-white/80 font-medium mb-1 uppercase tracking-wider">Total Amount</p>
+<h2 id="order-price" class="text-5xl font-black tracking-tight mb-4">$147.00</h2>
 <div class="h-[1px] bg-white/20 w-full my-6"></div>
 <div class="flex items-center gap-3">
 <div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center">
-<span class="material-symbols-outlined text-white" data-weight="fill" style='font-variation-settings: "FILL" 1;'>verified</span>
+<span class="material-symbols-outlined text-white" style='font-variation-settings: "FILL" 1;'>verified</span>
 </div>
-<p class="text-xs leading-tight text-white/90" style="">Instant activation for Arcliva Clarity™ AI and all core systems.</p>
+<p id="order-subtext" class="text-xs leading-tight text-white/90">Instant activation for Arcliva Clarity™ AI and all core systems.</p>
 </div>
 </div>
 </div>
 <!-- Summary List -->
 <div class="bg-white border border-gray-100 rounded-xl p-6 shadow-sm">
-<h3 class="text-sm font-bold text-charcoal mb-4 uppercase tracking-wider" style="">Order Summary</h3>
+<h3 class="text-sm font-bold text-charcoal mb-4 uppercase tracking-wider">Order Summary</h3>
 <div class="space-y-3">
 <div class="flex justify-between text-sm">
-<span class="text-gray-500" style="">Program Subtotal</span>
-<span class="font-semibold text-charcoal" style="">$147.00</span>
+<span id="summary-label" class="text-gray-500">Lifetime Access</span>
+<span id="summary-price" class="font-semibold text-charcoal">$147.00</span>
 </div>
 <div class="flex justify-between text-sm">
-<span class="text-gray-500" style="">Processing Fee</span>
-<span class="font-semibold text-arcliva-accent" style="">$0.00</span>
+<span class="text-gray-500">Processing Fee</span>
+<span class="font-semibold text-arcliva-accent">$0.00</span>
 </div>
 <div class="pt-3 mt-3 border-t border-gray-100 flex justify-between items-center">
-<span class="text-charcoal font-bold" style="">Today's Total</span>
-<span class="text-2xl font-black text-arcliva-teal" style="">$147.00</span>
+<span class="text-charcoal font-bold">Today's Total</span>
+<span id="summary-total" class="text-2xl font-black text-arcliva-teal">$147.00</span>
 </div>
 </div>
 </div>
 <!-- Included Section -->
 <div class="space-y-4">
-<h3 class="text-sm font-bold text-charcoal uppercase tracking-wider" style="">Included in your plan</h3>
+<h3 class="text-sm font-bold text-charcoal uppercase tracking-wider">Included in your plan</h3>
 <ul class="space-y-3">
-<li class="flex items-start gap-3" style="">
+<li class="flex items-start gap-3">
 <span class="material-symbols-outlined text-arcliva-teal mt-0.5" style='font-variation-settings: "FILL" 1;'>check_circle</span>
-<span class="text-sm text-gray-700 font-medium" style="">Daily Foundation Routine</span>
+<span class="text-sm text-gray-700 font-medium">Daily Foundation Routine</span>
 </li>
-<li class="flex items-start gap-3" style="">
+<li class="flex items-start gap-3">
 <span class="material-symbols-outlined text-arcliva-teal mt-0.5" style='font-variation-settings: "FILL" 1;'>check_circle</span>
-<span class="text-sm text-gray-700 font-medium" style="">All 5 Individual Systems</span>
+<span class="text-sm text-gray-700 font-medium">All 6 Wellness Systems</span>
 </li>
-<li class="flex items-start gap-3" style="">
+<li class="flex items-start gap-3">
 <span class="material-symbols-outlined text-arcliva-teal mt-0.5" style='font-variation-settings: "FILL" 1;'>check_circle</span>
-<span class="text-sm text-gray-700 font-medium" style="">Arcliva Clarity™ AI Access</span>
+<span class="text-sm text-gray-700 font-medium">Arcliva Clarity™ AI Access</span>
+</li>
+<li id="included-renewal" class="flex items-start gap-3">
+<span class="material-symbols-outlined text-arcliva-teal mt-0.5" style='font-variation-settings: "FILL" 1;'>check_circle</span>
+<span class="text-sm text-gray-700 font-medium">No renewals. Ever.</span>
 </li>
 </ul>
 </div>
@@ -277,7 +315,7 @@
 </div>
 </div>
 </main>
-<!-- Stripe Checkout Script -->
+<!-- Plan selector + Checkout Script -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     // Show cancelled banner if returning from Stripe
@@ -286,7 +324,60 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('cancelled-banner').classList.remove('hidden');
     }
 
-    // Handle checkout form submission
+    // ── Plan selection ────────────────────────────────────────
+    const planData = {
+        monthly:  { label: 'Monthly Subscription', price: '$14.99', display: '$14.99/mo', badge: 'Recurring', subtext: 'Billed monthly. Cancel anytime.', total: '$14.99', renewal: false },
+        annual:   { label: 'Annual Subscription',  price: '$99.99', display: '$99.99/yr', badge: 'Save 44%',  subtext: 'Billed annually (~$8.33/month).', total: '$99.99', renewal: false },
+        lifetime: { label: 'Lifetime Access',       price: '$147',   display: '$147',      badge: 'One-Time',  subtext: 'Instant activation. Pay once, own forever.', total: '$147.00', renewal: true }
+    };
+
+    let selectedPlan = params.get('plan') || 'lifetime';
+    if (!planData[selectedPlan]) selectedPlan = 'lifetime';
+
+    function applyPlan(plan) {
+        selectedPlan = plan;
+        const d = planData[plan];
+
+        // Highlight active button
+        document.querySelectorAll('.plan-btn').forEach(btn => {
+            const active = btn.dataset.plan === plan;
+            btn.classList.toggle('border-arcliva-teal', active);
+            btn.classList.toggle('bg-arcliva-teal/5', active);
+            btn.classList.toggle('border-gray-200', !active);
+        });
+
+        // Update order card
+        document.getElementById('order-badge').textContent = d.badge;
+        document.getElementById('order-price').textContent = d.display;
+        document.getElementById('order-subtext').textContent = d.subtext;
+
+        // Update summary
+        document.getElementById('summary-label').textContent = d.label;
+        document.getElementById('summary-price').textContent = d.price;
+        document.getElementById('summary-total').textContent = d.total;
+
+        // Renewal row
+        const renewalEl = document.getElementById('included-renewal');
+        if (d.renewal) {
+            renewalEl.querySelector('span:last-child').textContent = 'No renewals. Ever.';
+            renewalEl.classList.remove('hidden');
+        } else {
+            renewalEl.classList.add('hidden');
+        }
+
+        // Button label
+        document.getElementById('button-text').textContent = plan === 'lifetime' ? 'Complete Purchase' : plan === 'annual' ? 'Subscribe — Annual' : 'Subscribe — Monthly';
+    }
+
+    // Wire plan buttons
+    document.querySelectorAll('.plan-btn').forEach(btn => {
+        btn.addEventListener('click', () => applyPlan(btn.dataset.plan));
+    });
+
+    // Apply initial plan
+    applyPlan(selectedPlan);
+
+    // ── Checkout form ────────────────────────────────────────
     const form = document.getElementById('checkout-form');
     const button = document.getElementById('checkout-button');
     const buttonText = document.getElementById('button-text');
@@ -301,7 +392,6 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
 
-        // Disable button and show loading state
         button.disabled = true;
         buttonText.textContent = 'Redirecting to payment...';
         errorMessage.classList.add('hidden');
@@ -310,7 +400,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const response = await fetch('/api/create-checkout-session', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ email }),
+                body: JSON.stringify({ email, plan: selectedPlan }),
             });
 
             const text = await response.text();
@@ -323,12 +413,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 throw new Error(data.error || 'Something went wrong.');
             }
 
-            // Redirect to Stripe Checkout
             window.location.href = data.url;
         } catch (error) {
             showError(error.message);
             button.disabled = false;
-            buttonText.textContent = 'Complete Purchase';
+            buttonText.textContent = planData[selectedPlan] ? (selectedPlan === 'lifetime' ? 'Complete Purchase' : 'Subscribe') : 'Complete Purchase';
         }
     });
 
